@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>product on Meg Risdal</title>
+    <link>https://mrisdal.github.io/blog/categories/product/</link>
+    <description>Recent content in product on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Nov 2020 17:03:30 -0800</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/categories/product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Kaggle makes GPUs accessible to 5 million data scientists</title>
+      <link>https://mrisdal.github.io/blog/posts/kaggle-nvidia-gpus/</link>
+      <pubDate>Sun, 08 Nov 2020 17:03:30 -0800</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/kaggle-nvidia-gpus/</guid>
+      <description>This post was first published on NVIDIA&amp;rsquo;s developer blog on Oct 26th 2020
+Engineers and designers at Kaggle work hard behind the scenes to make it easy for our 5 million data scientist users to focus on learning and improving their deep learning models instead of ML ops like environment setup and resource provisioning.
+Kaggle’s community comes to the platform to learn and apply their skills in machine learning competitions. To do this, our users use Kaggle Notebooks, a hosted Jupyter-based IDE.</description>
+    </item>
+    
+    <item>
+      <title>How our team improved perceived reliability of Kaggle Notebooks</title>
+      <link>https://mrisdal.github.io/blog/posts/improved-kaggle-notebooks-reliability/</link>
+      <pubDate>Thu, 13 Aug 2020 15:18:44 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/improved-kaggle-notebooks-reliability/</guid>
+      <description>I’ve worked at Kaggle on-and-off since 2016. In this time, THE most consistent source of user feedback is about the reliability of Kaggle Notebooks. Sessions were slow to start and, far worse, sometimes users would lose hours of work. While progress had been made over the years, we’d never systematically addressed the problems.
+Over the past half year or so since I’ve rejoined Kaggle, the Notebooks team renewed its focus on reliability.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>remote-work on Meg Risdal</title>
+    <link>https://mrisdal.github.io/blog/tags/remote-work/</link>
+    <description>Recent content in remote-work on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Mar 2020 14:51:50 -0400</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/tags/remote-work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kaggle’s 5 remote-first tips for new WFHers</title>
+      <link>https://mrisdal.github.io/blog/posts/kaggle-wfh-tips/</link>
+      <pubDate>Sun, 29 Mar 2020 14:51:50 -0400</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/kaggle-wfh-tips/</guid>
+      <description>This post was originally published on DEV. My teammate Victor Mota and I wrote it together. You can check out his blog here.
+Kaggle is a unique team at Google. Unlike the vast majority of Google teams, our team is fully remote-first and distributed in offices (Google and home) across North America and Australia. When the spread of COVID-19 led to mandates to work from home (WFH), my coworker Victor and I saw an opportunity to share insights from our team to help others across Google adapt.</description>
+    </item>
+    
+  </channel>
+</rss>

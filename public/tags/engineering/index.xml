@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>engineering on Meg Risdal</title>
+    <link>https://mrisdal.github.io/blog/tags/engineering/</link>
+    <description>Recent content in engineering on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Feb 2019 23:50:25 -0500</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Amass Engineering Knowledge as a Product Manager</title>
+      <link>https://mrisdal.github.io/blog/posts/amassing-swe-knowledge-as-a-pm/</link>
+      <pubDate>Tue, 19 Feb 2019 23:50:25 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/amassing-swe-knowledge-as-a-pm/</guid>
+      <description>For about the past two years, I&amp;rsquo;ve been a product manager at Kaggle where I work on our public data platform as well as (more recently) our Google Cloud Platform integrations team. Lately I&amp;rsquo;ve had the opportunity to do quite a bit of reflection on my career thanks in part to having a mentee (being a mentor is awesome!). The other day she asked me how I &amp;ldquo;amassed as much engineering knowledge as I have&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

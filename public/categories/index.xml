@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Meg Risdal</title>
+    <link>https://mrisdal.github.io/blog/categories/</link>
+    <description>Recent content in Categories on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Feb 2022 22:49:00 -0800</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>personal</title>
+      <link>https://mrisdal.github.io/blog/categories/personal/</link>
+      <pubDate>Mon, 14 Feb 2022 22:49:00 -0800</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/categories/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>product</title>
+      <link>https://mrisdal.github.io/blog/categories/product/</link>
+      <pubDate>Sun, 08 Nov 2020 17:03:30 -0800</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/categories/product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>career</title>
+      <link>https://mrisdal.github.io/blog/categories/career/</link>
+      <pubDate>Fri, 23 Oct 2020 18:47:03 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/categories/career/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

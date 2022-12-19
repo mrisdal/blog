@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>How Kaggle makes GPUs accessible to 5 million data scientists - My New Hugo Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="http://example.org/favicon.png">
+  <link rel="canonical" href="http://example.org/kaggle-nvidia-gpus/" />
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.6b89cc86c0b843a772cdd6c6a8b7e11c2116c7933f6163d2ef225a87e1d2c121.css">
+  
+
+  
+    
+    <meta property="og:title" content="How Kaggle makes GPUs accessible to 5 million data scientists"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://example.org/kaggle-nvidia-gpus/"/>
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    
+    
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page page-default-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">My New Hugo Site</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="intro">
+  <h1>How Kaggle makes GPUs accessible to 5 million data scientists</h1>
+  
+</div>
+
+<div class="content">
+  <p><em><a href="https://news.developer.nvidia.com/how-kaggle-makes-gpus-accessible-to-5-million-data-scientists/">This post was first published on NVIDIA&rsquo;s developer blog on Oct 26th 2020</a></em></p>
+<p>Engineers and designers at <a href="https://www.kaggle.com/">Kaggle</a> work hard behind the scenes to make it easy for our 5 million data scientist users to focus on learning and improving their deep learning models instead of ML ops like environment setup and resource provisioning.</p>
+<p>Kaggle’s community comes to the platform to learn and apply their skills in machine learning competitions. To do this, our users use Kaggle Notebooks, a hosted Jupyter-based IDE.</p>
+<p>Our mission is to help the world learn from data, so we strive to make powerful resources available to our global community at no cost via Kaggle Notebooks. This includes NVIDIA P100 GPUs. Tens of thousands of users train deep learning models with GPUs on Kaggle every month, so ensuring the experience is a good one is key.</p>
+<p>When making accelerators available to our users, we prioritize two things:</p>
+<ul>
+<li>
+<p>Maintaining a fast, no-setup experience so users can start writing code within seconds</p>
+</li>
+<li>
+<p>Making efficient use of resources so we can extend them to as many users as possible</p>
+</li>
+</ul>
+<p>Achieving this has been no simple feat. In the rest of this post, I’ll describe a sampling of the engineering and design work our team has done to make this possible.</p>
+<h2 id="a-fast-no-setup-user-experience">A fast, no-setup user experience</h2>
+<p>Kaggle Notebooks come with popular data science packages like TensorFlow and PyTorch pre-installed in Docker containers (<a href="https://github.com/kaggle/docker-python">see the Python image GitHub repo</a>) that run on Google Compute Engine VMs. Our engineers maintain these Docker images so that our users don’t need to worry about installation and dependency management, a huge barrier to getting started with data science.</p>
+<p>We <a href="https://www.kaggle.com/product-feedback/161327">release updates to our images</a> about every two weeks. This means users always have easy access to the latest package versions which is important in a fast evolving domain such as machine learning.</p>
+<p>So that our users have a consistent, reliable experience using GPUs, we have also implemented a suite of tests that runs automatically every hour to catch any regressions in performance.</p>
+<p>Reproducibility is also important to a fast, no setup user experience. By default, a notebook will always use the Docker image version that it was created with so that code that runs today will still run months later without any special effort. Users also have the option to refer to the latest available image in case they want to make sure they can access new libraries or library versions.</p>
+<p>Given this setup, we have very, very large Docker images (~30GBs) for which we maintain many versions (over 150 so far at a total size of over 1.5TBs). This frequently risks degrading the user experience (e.g., pulling a full image can take around 10 minutes whereas we want our users to be able to begin writing code within seconds) so we’ve also made investments in reducing this pain point.</p>
+<p>For example, we now track which libraries are actually used by our community and automatically remove little-used ones. We’ve made other optimizations that together allow a notebook session to start within a matter of seconds.</p>
+<p>Finally, we recently made our Docker images compatible with the <a href="https://cloud.google.com/deep-learning-vm">Deep Learning VM images used by Cloud AI Notebooks</a> so that users could easily <a href="https://www.kaggle.com/product-feedback/159602">export their notebook and its dependencies to GCP</a>. This allows our users to pay for even more powerful compute without running into breaking changes.</p>
+<h2 id="efficient-use-of-resources">Efficient use of resources</h2>
+<p>Providing access to GPUs at no cost to our users is an amazing thing, but our ability to do so isn’t unlimited. To make GPUs available to as many people as possible while maintaining a smooth user experience, our team has undertaken various wastage mitigation measures.</p>
+<p>Recently, we <a href="https://medium.com/google-cloud/a-multi-cluster-grpc-architecture-on-gke-365bbd757df">re-architected the backend service</a> that provisions sessions for thousands of concurrent notebooks. One of the important new features we implemented was autoscaling for our VM pools. This allowed us to automatically keep a warm pool of GPU VMs at a capacity that’s a percentage above actual demand as opposed to some fixed size. Ultimately, this helped to reduce our costs by 36% while ensuring our users almost never end up in queues waiting for a machine to become available.</p>
+<p>We also continually strive to eliminate abuse. We love to see our community share notebooks like <a href="https://www.kaggle.com/hubwag/rapids-umap-with-fisher-metric-on-rgb-histograms">“RAPIDS/UMAP with Fisher metric on RGB histograms”</a> on our <a href="https://www.kaggle.com/c/siim-isic-melanoma-classification/notebooks?sortBy=voteCount&amp;group=everyone&amp;pageSize=20&amp;competitionId=20270">melanoma classification competition</a>. Not notebooks used for cryptocurrency mining. Our efforts here have allowed us to continue to extend these powerful resources to legitimate users.</p>
+<p><img src="https://lh5.googleusercontent.com/tFZpyALE0OhZjforc-AlrQXuiJNLyoKHwjBD8rH_IWnJ6k1fpNOdomR1BxO_8NqVKfOczjtr53MBBgxNvOVzBz1evWWEucqcqyTVpqJABB1uTFtHR8bfW0_d9jkago6h40Q0BPrQWQ" alt=""></p>
+<p><em><a href="https://www.kaggle.com/hubwag/rapids-umap-with-fisher-metric-on-rgb-histograms">3D UMAP embeddings</a> of melanoma RBG histograms created by <a href="https://www.kaggle.com/hubwag">Hubert Wagner</a> using a GPU enabled Kaggle Notebook</em></p>
+<p>Finally, we’ve made changes in the notebook editor’s frontend to make it easier for our users to more effectively manage their limited accelerator quota (30h/week). For example, we recently made it <a href="https://admin.kaggle.com/product-feedback/152669">easier for users to power a session on and off</a> within seconds; previously, the session start time could take 30 seconds to a few minutes. Additionally, it’s now possible to edit code interactively without an accelerator and <a href="https://admin.kaggle.com/product-feedback/161328">only use a GPU when saving a new version</a> (executing the notebook top-to-bottom).</p>
+<h2 id="get-started-with-gpus-on-kaggle">Get started with GPUs on Kaggle</h2>
+<p>Kaggle is a great place to learn how to train deep learning models using GPUs. We have a number of <a href="https://www.kaggle.com/learn/overview">Courses</a>, series of lessons and interactive notebooks, including <a href="https://www.kaggle.com/learn/deep-learning">Deep Learning</a>.</p>
+<p>You can apply what you learn in a machine learning <a href="https://www.kaggle.com/competitions">Competition</a>, for example our ongoing Getting Started NLP Competition to <a href="https://www.kaggle.com/c/nlp-getting-started">predict which tweets are about real disasters or not</a>.</p>
+<p>Finally, you can browse any of the <a href="https://www.kaggle.com/search?q=tag%3Agpu+in%3Anotebooks">over 30,000 public GPU notebooks</a> shared on Kaggle. Then, simply click the “Copy &amp; Edit” button to begin editing and running code.</p>
+<p>We hope it’s fast and easy to get started, but if you have feedback <a href="https://www.kaggle.com/product-feedback">please let us know</a>!</p>
+<p><em>Thank you to Vincent Roseberry, Dustin Herbison, Philippe Modard, and Anna Montoya for their feedback on this post.</em></p>
+<p>&ndash;</p>
+<h2 id="reply">Reply</h2>
+<p>Follow the conversation and discuss on Twitter.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cross-posting my post for NVIDIA on my personal blog. Read how we make GPUs accessible to Kaggle&#39;s community of data scientist. 👩‍💻 <a href="https://t.co/7v3hotdkp1">https://t.co/7v3hotdkp1</a></p>&mdash; meg.ehh 🇨🇦 (@MeganRisdal) <a href="https://twitter.com/MeganRisdal/status/1325607215911235584?ref_src=twsrc%5Etfw">November 9, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</div>
+
+    <div class="footer">
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello on Meg Risdal</title>
+    <link>https://mrisdal.github.io/blog/</link>
+    <description>Recent content in Hello on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Feb 2022 22:49:00 -0800</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Year in Review, 2021</title>
+      <link>https://mrisdal.github.io/blog/posts/my-2021/</link>
+      <pubDate>Mon, 14 Feb 2022 22:49:00 -0800</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/my-2021/</guid>
+      <description>My Year in Review, 2021 Welcome to my third annual Meg’s year-in-review post (see 2020 and 2019) and what’s my first blog post in all of 2021. Eek. Haven’t made much time for writing, unfortunately; it’s been a much busier, happier year than 2020 was! Unlike 2020 which I spent in a monotonous, depressing “comfort zone” (the pandemic obviously didn’t help), this year I really took back control of my happiness.</description>
+    </item>
+    
+    <item>
+      <title>My Year in Review, 2020</title>
+      <link>https://mrisdal.github.io/blog/posts/my-2020/</link>
+      <pubDate>Sun, 03 Jan 2021 02:29:15 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/my-2020/</guid>
+      <description>This is my second year-in-review post see my 2019 post. This year was much shittier than last year. That&amp;rsquo;s partly my fault and partly the fault of the pandemic, my bike getting stolen, etc. etc. So I think I spent most of this year in a &amp;ldquo;comfort zone&amp;rdquo; which was somewhat depressing and monotonous. There were some bright spots, though:
+I started my new (old) job back at Kaggle which has been good My husband and I took a lovely vacation to Hawaii right before the pandemic hit I started cooking a lot more and haven&amp;rsquo;t gotten totally sick of it yet I began doing something like mentoring semi-regularly I&amp;rsquo;ve improved a lot at disconnecting from work I&amp;rsquo;ve managed to socialize occasionally through things like horror movie club, playing Among Us, etc.</description>
+    </item>
+    
+    <item>
+      <title>How Kaggle makes GPUs accessible to 5 million data scientists</title>
+      <link>https://mrisdal.github.io/blog/posts/kaggle-nvidia-gpus/</link>
+      <pubDate>Sun, 08 Nov 2020 17:03:30 -0800</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/kaggle-nvidia-gpus/</guid>
+      <description>This post was first published on NVIDIA&amp;rsquo;s developer blog on Oct 26th 2020
+Engineers and designers at Kaggle work hard behind the scenes to make it easy for our 5 million data scientist users to focus on learning and improving their deep learning models instead of ML ops like environment setup and resource provisioning.
+Kaggle’s community comes to the platform to learn and apply their skills in machine learning competitions. To do this, our users use Kaggle Notebooks, a hosted Jupyter-based IDE.</description>
+    </item>
+    
+    <item>
+      <title>Product management lessons learned through King Crimson lyrics</title>
+      <link>https://mrisdal.github.io/blog/posts/king-crimson-lyrics/</link>
+      <pubDate>Fri, 23 Oct 2020 18:47:03 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/king-crimson-lyrics/</guid>
+      <description>Almost every musician I listen to carries influences of the progressive rock band King Crimson. For instance, my favorite musician Steven Wilson has put out entire albums that (to me) sounds like a King Crimson “project”. Including his debut solo album Grace for Drowning which featured several King Crimson members including Tony Levin.
+Today, I realized not only does King Crimson&amp;rsquo;s sound echo prodigiously within the discographies of my favorite artists, they&amp;rsquo;ve also had a thing or two to say about good (and bad) product management over the decades!</description>
+    </item>
+    
+    <item>
+      <title>Making public mistakes &amp; code memes: The origin of my famous Titanic notebook</title>
+      <link>https://mrisdal.github.io/blog/posts/my-titanic-notebook/</link>
+      <pubDate>Tue, 25 Aug 2020 13:38:46 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/my-titanic-notebook/</guid>
+      <description>Yesterday, it was a great honor to be a guest on Nick Wan&amp;rsquo;s data science livestream on Twitch to talk through bad (and less bad) data viz that I&amp;rsquo;ve created.
+It was a lot of fun! Talking about the history of my popular Titanic R notebook on Kaggle was a great opportunity for me to reflect on my data science journey. Its explosive success was very unintended. But as a result I&amp;rsquo;ve got a couple of cool insights to share about this experience and how I apply them in my role as a product manager at Kaggle today.</description>
+    </item>
+    
+    <item>
+      <title>How our team improved perceived reliability of Kaggle Notebooks</title>
+      <link>https://mrisdal.github.io/blog/posts/improved-kaggle-notebooks-reliability/</link>
+      <pubDate>Thu, 13 Aug 2020 15:18:44 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/improved-kaggle-notebooks-reliability/</guid>
+      <description>I’ve worked at Kaggle on-and-off since 2016. In this time, THE most consistent source of user feedback is about the reliability of Kaggle Notebooks. Sessions were slow to start and, far worse, sometimes users would lose hours of work. While progress had been made over the years, we’d never systematically addressed the problems.
+Over the past half year or so since I’ve rejoined Kaggle, the Notebooks team renewed its focus on reliability.</description>
+    </item>
+    
+    <item>
+      <title>Be aggressive, be be aggressive. But how aggressive?</title>
+      <link>https://mrisdal.github.io/blog/posts/be-aggressive/</link>
+      <pubDate>Fri, 19 Jun 2020 19:47:01 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/be-aggressive/</guid>
+      <description>This week I asked for feedback on something I wrote from a trusted colleague. My audience was larger than usual for me and 100% men (as far as I knew). Although I&amp;rsquo;m already pretty confident in my prose-writing skills, I felt greater than usual pressure to make a compelling, tight story. I wanted what I wrote to sound authoritative and well informed.
+My colleague gave me great constructive feedback and overall really liked what I wrote.</description>
+    </item>
+    
+    <item>
+      <title>Kaggle’s 5 remote-first tips for new WFHers</title>
+      <link>https://mrisdal.github.io/blog/posts/kaggle-wfh-tips/</link>
+      <pubDate>Sun, 29 Mar 2020 14:51:50 -0400</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/kaggle-wfh-tips/</guid>
+      <description>This post was originally published on DEV. My teammate Victor Mota and I wrote it together. You can check out his blog here.
+Kaggle is a unique team at Google. Unlike the vast majority of Google teams, our team is fully remote-first and distributed in offices (Google and home) across North America and Australia. When the spread of COVID-19 led to mandates to work from home (WFH), my coworker Victor and I saw an opportunity to share insights from our team to help others across Google adapt.</description>
+    </item>
+    
+    <item>
+      <title>Productive transparency in online communities: Inspiration from trains and IKEA</title>
+      <link>https://mrisdal.github.io/blog/posts/transparency-in-online-communities/</link>
+      <pubDate>Wed, 22 Jan 2020 22:16:30 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/transparency-in-online-communities/</guid>
+      <description>The Japanese train system is famously fast, clean, friendly, and efficient. On the drive home from my first day back at Google I was reminded of why as I listened to the 99% Invisible podcast episode “Wait wait &amp;hellip; tell me!”. I’ll give you the tl;dr summary of the story and explain some connections I made to product development for online communities that got me so in my head I missed my exit for the 405.</description>
+    </item>
+    
+    <item>
+      <title>My Year in Review, 2019</title>
+      <link>https://mrisdal.github.io/blog/posts/my-2019/</link>
+      <pubDate>Wed, 11 Dec 2019 02:29:15 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/my-2019/</guid>
+      <description>This is my own year-in-review. What started as a dumb tweet has become a blog post because I&amp;rsquo;m between jobs. Enjoy!
+My 2019:
+📽️ Film - Society (1989)
+🎶 Song - Sandwich, Marco Minnemann (2016)
+💽 Record - In the Court of the Crimson King (50th anniversary) King Crimson (2019)
+📚 Book - Our Mathematical Universe, Max Tegmark (2014)
+🎮 Game - Untitled Goose (2019)
+🎙️ Podcast - SYSK (2008-2019)</description>
+    </item>
+    
+    <item>
+      <title>Reflections on Stack Overflow: Building Successful Communities</title>
+      <link>https://mrisdal.github.io/blog/posts/reflections-on-stack-overflow/</link>
+      <pubDate>Fri, 06 Dec 2019 00:48:59 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/reflections-on-stack-overflow/</guid>
+      <description>Today is my last day at Stack Overflow. For most of this year, I was the lead product manager for their flagship product, public Q&amp;amp;A. In my last couple of weeks there, I spent some time reflecting on what I have learned and how my perspectives as a product leader matured. As someone deeply invested in building open developer communities, I continue to refine my opinions about how to approach building community-facing products.</description>
+    </item>
+    
+    <item>
+      <title>My Interview with Superlinguo: Linguists in Careers</title>
+      <link>https://mrisdal.github.io/blog/posts/superlinguo-interview/</link>
+      <pubDate>Fri, 06 Dec 2019 00:29:18 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/superlinguo-interview/</guid>
+      <description>This is cross-posted from an interview I recently did with Superlinguo, a language and linguistics blog by Lauren Gawne, for her excellent linguists in careers series.
+From Lauren:
+A lot of tech people I know say “the best skill a programmer can have is knowing how to look up the right answer on Stack Exchange” It’s one of those websites that people use every day, but perhaps without thinking about how it gets built.</description>
+    </item>
+    
+    <item>
+      <title>How to Know Nothing</title>
+      <link>https://mrisdal.github.io/blog/posts/how-to-know-nothing/</link>
+      <pubDate>Sun, 12 May 2019 17:00:27 -0400</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/how-to-know-nothing/</guid>
+      <description>A couple of months ago I started a new job as a product manager at Stack Overflow. This blog post is about how to know nothing in a new job. It&amp;rsquo;s about that whiplash-like experience of going from confidently knowing everything there is to know about your work to coming to a grinding to halt so you can start all over again from scratch.
+Okay, maybe it&amp;rsquo;s not so dramatic as that, but the insecure feelings I was having inspired me to ask for advice from my Twitter followers:</description>
+    </item>
+    
+    <item>
+      <title>Product Management as an Episode of Black Mirror</title>
+      <link>https://mrisdal.github.io/blog/posts/product-management-as-an-episode-of-black-mirror/</link>
+      <pubDate>Tue, 09 Apr 2019 01:43:59 -0400</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/product-management-as-an-episode-of-black-mirror/</guid>
+      <description>Being a product manager on a small remote, distributed team reminds me a lot of the Black Mirror episode, Be Right Back.
+In this episode of the sci-fi anthology series, a woman uses an AI service to bring back her recently deceased partner. She does so by uploading all of their text messages, emails, voicemails, and any other computer-mediated conversation she shared with him to the, uhh, Cloud I suppose. That&amp;rsquo;s one use case for GDPR data requests!</description>
+    </item>
+    
+    <item>
+      <title>How to Amass Engineering Knowledge as a Product Manager</title>
+      <link>https://mrisdal.github.io/blog/posts/amassing-swe-knowledge-as-a-pm/</link>
+      <pubDate>Tue, 19 Feb 2019 23:50:25 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/amassing-swe-knowledge-as-a-pm/</guid>
+      <description>For about the past two years, I&amp;rsquo;ve been a product manager at Kaggle where I work on our public data platform as well as (more recently) our Google Cloud Platform integrations team. Lately I&amp;rsquo;ve had the opportunity to do quite a bit of reflection on my career thanks in part to having a mentee (being a mentor is awesome!). The other day she asked me how I &amp;ldquo;amassed as much engineering knowledge as I have&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>New Hobbies</title>
+      <link>https://mrisdal.github.io/blog/posts/new-hobbies/</link>
+      <pubDate>Sat, 06 Oct 2018 17:53:46 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/new-hobbies/</guid>
+      <description>A couple of weeks ago I tweeted that I wanted to explore new hobbies. For the past couple of years, I&amp;rsquo;ve engrossed myself in a job I love. My career development has been really rewarding professionally, but lately I&amp;rsquo;ve felt personally underdeveloped. My current hobbies include seeing movies (especially horror and sci-fi) and exploring my new home of Los Angeles (biking, hiking, and of course eating). While these things are fun, I feel like I could be doing and creating so much more.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://mrisdal.github.io/blog/posts/hello-world/</link>
+      <pubDate>Sat, 06 Oct 2018 15:51:11 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/hello-world/</guid>
+      <description>Hello world! I&amp;rsquo;m recreating my personal website using Hugo. Previously it was written in Bootstrap. I hope you enjoy the new look and layout.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mrisdal.github.io/blog/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/about/</guid>
+      <description>More about me &amp;hellip; I have two Master&amp;rsquo;s degrees in linguistics, one from UCLA where I had started a PhD and the other from North Carolina State University. I studied laboratory phonology, sociophonetics, and statistical research methods.
+I&amp;rsquo;m originally from Minnesota, but I&amp;rsquo;ve lived in Wisconsin, France, North Carolina, Pennsylvania, California (twice!), and now Toronto, Ontario in Canada.
+My favorite things are: watching horror and scifi movies, being outdoors and exercising, discovering new places to eat, going to shows (music and comedy) and struggling to decide what I want to learn next.</description>
+    </item>
+    
+  </channel>
+</rss>

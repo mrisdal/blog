@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>product management on Meg Risdal</title>
+    <link>https://mrisdal.github.io/blog/tags/product-management/</link>
+    <description>Recent content in product management on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Oct 2020 18:47:03 -0700</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/tags/product-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product management lessons learned through King Crimson lyrics</title>
+      <link>https://mrisdal.github.io/blog/posts/king-crimson-lyrics/</link>
+      <pubDate>Fri, 23 Oct 2020 18:47:03 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/king-crimson-lyrics/</guid>
+      <description>Almost every musician I listen to carries influences of the progressive rock band King Crimson. For instance, my favorite musician Steven Wilson has put out entire albums that (to me) sounds like a King Crimson “project”. Including his debut solo album Grace for Drowning which featured several King Crimson members including Tony Levin.
+Today, I realized not only does King Crimson&amp;rsquo;s sound echo prodigiously within the discographies of my favorite artists, they&amp;rsquo;ve also had a thing or two to say about good (and bad) product management over the decades!</description>
+    </item>
+    
+    <item>
+      <title>How our team improved perceived reliability of Kaggle Notebooks</title>
+      <link>https://mrisdal.github.io/blog/posts/improved-kaggle-notebooks-reliability/</link>
+      <pubDate>Thu, 13 Aug 2020 15:18:44 -0700</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/improved-kaggle-notebooks-reliability/</guid>
+      <description>I’ve worked at Kaggle on-and-off since 2016. In this time, THE most consistent source of user feedback is about the reliability of Kaggle Notebooks. Sessions were slow to start and, far worse, sometimes users would lose hours of work. While progress had been made over the years, we’d never systematically addressed the problems.
+Over the past half year or so since I’ve rejoined Kaggle, the Notebooks team renewed its focus on reliability.</description>
+    </item>
+    
+    <item>
+      <title>Reflections on Stack Overflow: Building Successful Communities</title>
+      <link>https://mrisdal.github.io/blog/posts/reflections-on-stack-overflow/</link>
+      <pubDate>Fri, 06 Dec 2019 00:48:59 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/reflections-on-stack-overflow/</guid>
+      <description>Today is my last day at Stack Overflow. For most of this year, I was the lead product manager for their flagship product, public Q&amp;amp;A. In my last couple of weeks there, I spent some time reflecting on what I have learned and how my perspectives as a product leader matured. As someone deeply invested in building open developer communities, I continue to refine my opinions about how to approach building community-facing products.</description>
+    </item>
+    
+    <item>
+      <title>My Interview with Superlinguo: Linguists in Careers</title>
+      <link>https://mrisdal.github.io/blog/posts/superlinguo-interview/</link>
+      <pubDate>Fri, 06 Dec 2019 00:29:18 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/superlinguo-interview/</guid>
+      <description>This is cross-posted from an interview I recently did with Superlinguo, a language and linguistics blog by Lauren Gawne, for her excellent linguists in careers series.
+From Lauren:
+A lot of tech people I know say “the best skill a programmer can have is knowing how to look up the right answer on Stack Exchange” It’s one of those websites that people use every day, but perhaps without thinking about how it gets built.</description>
+    </item>
+    
+    <item>
+      <title>How to Know Nothing</title>
+      <link>https://mrisdal.github.io/blog/posts/how-to-know-nothing/</link>
+      <pubDate>Sun, 12 May 2019 17:00:27 -0400</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/how-to-know-nothing/</guid>
+      <description>A couple of months ago I started a new job as a product manager at Stack Overflow. This blog post is about how to know nothing in a new job. It&amp;rsquo;s about that whiplash-like experience of going from confidently knowing everything there is to know about your work to coming to a grinding to halt so you can start all over again from scratch.
+Okay, maybe it&amp;rsquo;s not so dramatic as that, but the insecure feelings I was having inspired me to ask for advice from my Twitter followers:</description>
+    </item>
+    
+    <item>
+      <title>Product Management as an Episode of Black Mirror</title>
+      <link>https://mrisdal.github.io/blog/posts/product-management-as-an-episode-of-black-mirror/</link>
+      <pubDate>Tue, 09 Apr 2019 01:43:59 -0400</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/product-management-as-an-episode-of-black-mirror/</guid>
+      <description>Being a product manager on a small remote, distributed team reminds me a lot of the Black Mirror episode, Be Right Back.
+In this episode of the sci-fi anthology series, a woman uses an AI service to bring back her recently deceased partner. She does so by uploading all of their text messages, emails, voicemails, and any other computer-mediated conversation she shared with him to the, uhh, Cloud I suppose. That&amp;rsquo;s one use case for GDPR data requests!</description>
+    </item>
+    
+    <item>
+      <title>How to Amass Engineering Knowledge as a Product Manager</title>
+      <link>https://mrisdal.github.io/blog/posts/amassing-swe-knowledge-as-a-pm/</link>
+      <pubDate>Tue, 19 Feb 2019 23:50:25 -0500</pubDate>
+      
+      <guid>https://mrisdal.github.io/blog/posts/amassing-swe-knowledge-as-a-pm/</guid>
+      <description>For about the past two years, I&amp;rsquo;ve been a product manager at Kaggle where I work on our public data platform as well as (more recently) our Google Cloud Platform integrations team. Lately I&amp;rsquo;ve had the opportunity to do quite a bit of reflection on my career thanks in part to having a mentee (being a mentor is awesome!). The other day she asked me how I &amp;ldquo;amassed as much engineering knowledge as I have&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>
