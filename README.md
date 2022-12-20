@@ -1,6 +1,6 @@
 # Personal blog
 
-https://mrisdal.github.io/blog/ or meg.dev
+meg.dev
 
 Made with [Hugo](https://gohugo.io/) ([winston theme](https://github.com/zerostaticthemes/hugo-winston-theme)).
 
