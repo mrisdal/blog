@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>communities on Meg Risdal</title>
-    <link>https://mrisdal.github.io/blog/tags/communities/</link>
+    <link>https://www.meg.dev/tags/communities/</link>
     <description>Recent content in communities on Meg Risdal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jan 2020 22:16:30 -0500</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/tags/communities/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jan 2020 22:16:30 -0500</lastBuildDate><atom:link href="https://www.meg.dev/tags/communities/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Productive transparency in online communities: Inspiration from trains and IKEA</title>
-      <link>https://mrisdal.github.io/blog/posts/transparency-in-online-communities/</link>
+      <link>https://www.meg.dev/posts/transparency-in-online-communities/</link>
       <pubDate>Wed, 22 Jan 2020 22:16:30 -0500</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/transparency-in-online-communities/</guid>
+      <guid>https://www.meg.dev/posts/transparency-in-online-communities/</guid>
       <description>The Japanese train system is famously fast, clean, friendly, and efficient. On the drive home from my first day back at Google I was reminded of why as I listened to the 99% Invisible podcast episode “Wait wait &amp;hellip; tell me!”. I’ll give you the tl;dr summary of the story and explain some connections I made to product development for online communities that got me so in my head I missed my exit for the 405.</description>
     </item>
     
     <item>
       <title>Reflections on Stack Overflow: Building Successful Communities</title>
-      <link>https://mrisdal.github.io/blog/posts/reflections-on-stack-overflow/</link>
+      <link>https://www.meg.dev/posts/reflections-on-stack-overflow/</link>
       <pubDate>Fri, 06 Dec 2019 00:48:59 -0500</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/reflections-on-stack-overflow/</guid>
+      <guid>https://www.meg.dev/posts/reflections-on-stack-overflow/</guid>
       <description>Today is my last day at Stack Overflow. For most of this year, I was the lead product manager for their flagship product, public Q&amp;amp;A. In my last couple of weeks there, I spent some time reflecting on what I have learned and how my perspectives as a product leader matured. As someone deeply invested in building open developer communities, I continue to refine my opinions about how to approach building community-facing products.</description>
     </item>
     
     <item>
       <title>My Interview with Superlinguo: Linguists in Careers</title>
-      <link>https://mrisdal.github.io/blog/posts/superlinguo-interview/</link>
+      <link>https://www.meg.dev/posts/superlinguo-interview/</link>
       <pubDate>Fri, 06 Dec 2019 00:29:18 -0500</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/superlinguo-interview/</guid>
+      <guid>https://www.meg.dev/posts/superlinguo-interview/</guid>
       <description>This is cross-posted from an interview I recently did with Superlinguo, a language and linguistics blog by Lauren Gawne, for her excellent linguists in careers series.
 From Lauren:
 A lot of tech people I know say “the best skill a programmer can have is knowing how to look up the right answer on Stack Exchange” It’s one of those websites that people use every day, but perhaps without thinking about how it gets built.</description>
@@ -38,10 +38,10 @@ A lot of tech people I know say “the best skill a programmer can have is knowi
     
     <item>
       <title>How to Know Nothing</title>
-      <link>https://mrisdal.github.io/blog/posts/how-to-know-nothing/</link>
+      <link>https://www.meg.dev/posts/how-to-know-nothing/</link>
       <pubDate>Sun, 12 May 2019 17:00:27 -0400</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/how-to-know-nothing/</guid>
+      <guid>https://www.meg.dev/posts/how-to-know-nothing/</guid>
       <description>A couple of months ago I started a new job as a product manager at Stack Overflow. This blog post is about how to know nothing in a new job. It&amp;rsquo;s about that whiplash-like experience of going from confidently knowing everything there is to know about your work to coming to a grinding to halt so you can start all over again from scratch.
 Okay, maybe it&amp;rsquo;s not so dramatic as that, but the insecure feelings I was having inspired me to ask for advice from my Twitter followers:</description>
     </item>

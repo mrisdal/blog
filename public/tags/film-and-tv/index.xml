@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>film and tv on Meg Risdal</title>
-    <link>https://mrisdal.github.io/blog/tags/film-and-tv/</link>
+    <link>https://www.meg.dev/tags/film-and-tv/</link>
     <description>Recent content in film and tv on Meg Risdal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Apr 2019 01:43:59 -0400</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/tags/film-and-tv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Apr 2019 01:43:59 -0400</lastBuildDate><atom:link href="https://www.meg.dev/tags/film-and-tv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Product Management as an Episode of Black Mirror</title>
-      <link>https://mrisdal.github.io/blog/posts/product-management-as-an-episode-of-black-mirror/</link>
+      <link>https://www.meg.dev/posts/product-management-as-an-episode-of-black-mirror/</link>
       <pubDate>Tue, 09 Apr 2019 01:43:59 -0400</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/product-management-as-an-episode-of-black-mirror/</guid>
+      <guid>https://www.meg.dev/posts/product-management-as-an-episode-of-black-mirror/</guid>
       <description>Being a product manager on a small remote, distributed team reminds me a lot of the Black Mirror episode, Be Right Back.
 In this episode of the sci-fi anthology series, a woman uses an AI service to bring back her recently deceased partner. She does so by uploading all of their text messages, emails, voicemails, and any other computer-mediated conversation she shared with him to the, uhh, Cloud I suppose. That&amp;rsquo;s one use case for GDPR data requests!</description>
     </item>

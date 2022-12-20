@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data science on Meg Risdal</title>
-    <link>https://mrisdal.github.io/blog/tags/data-science/</link>
+    <link>https://www.meg.dev/tags/data-science/</link>
     <description>Recent content in data science on Meg Risdal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 17:03:30 -0800</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Nov 2020 17:03:30 -0800</lastBuildDate><atom:link href="https://www.meg.dev/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Kaggle makes GPUs accessible to 5 million data scientists</title>
-      <link>https://mrisdal.github.io/blog/posts/kaggle-nvidia-gpus/</link>
+      <link>https://www.meg.dev/posts/kaggle-nvidia-gpus/</link>
       <pubDate>Sun, 08 Nov 2020 17:03:30 -0800</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/kaggle-nvidia-gpus/</guid>
+      <guid>https://www.meg.dev/posts/kaggle-nvidia-gpus/</guid>
       <description>This post was first published on NVIDIA&amp;rsquo;s developer blog on Oct 26th 2020
 Engineers and designers at Kaggle work hard behind the scenes to make it easy for our 5 million data scientist users to focus on learning and improving their deep learning models instead of ML ops like environment setup and resource provisioning.
 Kaggle’s community comes to the platform to learn and apply their skills in machine learning competitions. To do this, our users use Kaggle Notebooks, a hosted Jupyter-based IDE.</description>
@@ -20,10 +20,10 @@ Kaggle’s community comes to the platform to learn and apply their skills in ma
     
     <item>
       <title>Making public mistakes &amp; code memes: The origin of my famous Titanic notebook</title>
-      <link>https://mrisdal.github.io/blog/posts/my-titanic-notebook/</link>
+      <link>https://www.meg.dev/posts/my-titanic-notebook/</link>
       <pubDate>Tue, 25 Aug 2020 13:38:46 -0700</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/my-titanic-notebook/</guid>
+      <guid>https://www.meg.dev/posts/my-titanic-notebook/</guid>
       <description>Yesterday, it was a great honor to be a guest on Nick Wan&amp;rsquo;s data science livestream on Twitch to talk through bad (and less bad) data viz that I&amp;rsquo;ve created.
 It was a lot of fun! Talking about the history of my popular Titanic R notebook on Kaggle was a great opportunity for me to reflect on my data science journey. Its explosive success was very unintended. But as a result I&amp;rsquo;ve got a couple of cool insights to share about this experience and how I apply them in my role as a product manager at Kaggle today.</description>
     </item>

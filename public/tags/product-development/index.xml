@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>product-development on Meg Risdal</title>
-    <link>https://mrisdal.github.io/blog/tags/product-development/</link>
+    <link>https://www.meg.dev/tags/product-development/</link>
     <description>Recent content in product-development on Meg Risdal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jan 2020 22:16:30 -0500</lastBuildDate><atom:link href="https://mrisdal.github.io/blog/tags/product-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jan 2020 22:16:30 -0500</lastBuildDate><atom:link href="https://www.meg.dev/tags/product-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Productive transparency in online communities: Inspiration from trains and IKEA</title>
-      <link>https://mrisdal.github.io/blog/posts/transparency-in-online-communities/</link>
+      <link>https://www.meg.dev/posts/transparency-in-online-communities/</link>
       <pubDate>Wed, 22 Jan 2020 22:16:30 -0500</pubDate>
       
-      <guid>https://mrisdal.github.io/blog/posts/transparency-in-online-communities/</guid>
+      <guid>https://www.meg.dev/posts/transparency-in-online-communities/</guid>
       <description>The Japanese train system is famously fast, clean, friendly, and efficient. On the drive home from my first day back at Google I was reminded of why as I listened to the 99% Invisible podcast episode “Wait wait &amp;hellip; tell me!”. I’ll give you the tl;dr summary of the story and explain some connections I made to product development for online communities that got me so in my head I missed my exit for the 405.</description>
     </item>
     
