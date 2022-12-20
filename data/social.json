@@ -14,6 +14,26 @@
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/megan-risdal-4617812a/",
       "image": "images/social/linkedin.svg"
+    },
+    {
+      "name": "mastodon",
+      "url": "https://mastodon.social/@meganrisdal",
+      "image": "images/social/mastodon.svg"
+    },
+    {
+      "name": "kaggle",
+      "url": "https://kaggle.com/mrisdal",
+      "image": "images/social/kaggle.svg"
+    },
+    {
+      "name": "letterboxd",
+      "url": "https://letterboxd.com/mrisdal/",
+      "image": "images/social/letterboxd.svg"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/meganrisdal/",
+      "image": "images/social/instagram.svg"
     }
   ]
 }
