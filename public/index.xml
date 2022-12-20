@@ -190,5 +190,15 @@ I&amp;rsquo;m originally from Minnesota, but I&amp;rsquo;ve lived in Wisconsin, 
 My favorite things are: watching horror and scifi movies, being outdoors and exercising, discovering new places to eat, going to shows (music and comedy) and struggling to decide what I want to learn next.</description>
     </item>
     
+    <item>
+      <title>Contact</title>
+      <link>https://www.meg.dev/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.meg.dev/contact/</guid>
+      <description>If you want to reach me personally: webmaster@meg.com
+If you want to reach me at work: meg@kaggle.com</description>
+    </item>
+    
   </channel>
 </rss>
