@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.meg.dev/categories/</loc>
-    <lastmod>2022-02-14T22:49:00-08:00</lastmod>
+    <loc>https://www.meg.dev/posts/recommendations/</loc>
+    <lastmod>2022-12-23T20:17:10-05:00</lastmod>
   </url><url>
     <loc>https://www.meg.dev/</loc>
+    <lastmod>2022-12-23T20:17:10-05:00</lastmod>
+  </url><url>
+    <loc>https://www.meg.dev/categories/</loc>
     <lastmod>2022-02-14T22:49:00-08:00</lastmod>
   </url><url>
     <loc>https://www.meg.dev/tags/hobbies/</loc>
