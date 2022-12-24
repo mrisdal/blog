@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.meg.dev/posts/recommendations/</loc>
-    <lastmod>2022-12-23T20:17:10-05:00</lastmod>
+    <loc>https://www.meg.dev/pages/cantonese/</loc>
+    <lastmod>2022-12-23T21:23:08-05:00</lastmod>
   </url><url>
     <loc>https://www.meg.dev/</loc>
+    <lastmod>2022-12-23T21:23:08-05:00</lastmod>
+  </url><url>
+    <loc>https://www.meg.dev/pages/</loc>
+    <lastmod>2022-12-23T21:23:08-05:00</lastmod>
+  </url><url>
+    <loc>https://www.meg.dev/posts/recommendations/</loc>
     <lastmod>2022-12-23T20:17:10-05:00</lastmod>
   </url><url>
     <loc>https://www.meg.dev/categories/</loc>
@@ -137,7 +143,5 @@
     <loc>https://www.meg.dev/about/</loc>
   </url><url>
     <loc>https://www.meg.dev/contact/</loc>
-  </url><url>
-    <loc>https://www.meg.dev/pages/</loc>
   </url>
 </urlset>
