@@ -5,9 +5,9 @@ url: "contact"
 menu:
   main:
     name: "Contact"
-    weight: 4
+    weight: 5
 ---
 
-If you want to reach me personally: webmaster@meg.com
+If you want to reach me personally: hi@meg.dev
 
 If you want to reach me at work: meg@kaggle.com
