@@ -42,3 +42,12 @@ pygmentsUseClasses = true
     name = 'Home'
     url = '/'
     weight = 1
+
+[Author]
+    name = "Meg Risdal"
+    email = "hello@meg.dev"
+
+[outputFormats]
+     [outputFormats.RSS]
+         mediaType = "application/rss+xml"
+         baseName = "feed"

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Meg Risdal</title>
+    <link>https://www.meg.dev/pages/</link>
+    <description>Recent content in Pages on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@meg.dev (Meg Risdal)</managingEditor>
+    <webMaster>hello@meg.dev (Meg Risdal)</webMaster>
+    <lastBuildDate>Fri, 23 Dec 2022 21:23:08 -0500</lastBuildDate><atom:link href="https://www.meg.dev/pages/feed.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

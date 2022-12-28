@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>learning on Meg Risdal</title>
+    <link>https://www.meg.dev/tags/learning/</link>
+    <description>Recent content in learning on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@meg.dev (Meg Risdal)</managingEditor>
+    <webMaster>hello@meg.dev (Meg Risdal)</webMaster>
+    <lastBuildDate>Tue, 25 Aug 2020 13:38:46 -0700</lastBuildDate><atom:link href="https://www.meg.dev/tags/learning/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making public mistakes &amp; code memes: The origin of my famous Titanic notebook</title>
+      <link>https://www.meg.dev/posts/my-titanic-notebook/</link>
+      <pubDate>Tue, 25 Aug 2020 13:38:46 -0700</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/my-titanic-notebook/</guid>
+      <description>&lt;p&gt;Yesterday, it was a great honor to be a guest on &lt;a href=&#34;https://twitter.com/nickwan&#34;&gt;Nick Wan&amp;rsquo;s&lt;/a&gt; data science livestream on Twitch to &lt;a href=&#34;https://www.twitch.tv/videos/720567732?t=00h20m40s&#34;&gt;talk through bad (and less bad) data viz that I&amp;rsquo;ve created&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- In case I can get this working later
+&lt;iframe
+    src=&#34;https://player.twitch.tv/?video=v720567732&amp;time=00h20m40s&#34;
+    height=&#34;300&#34;
+    width=&#34;400&#34;
+    frameborder=&#34;0&#34;
+    scrolling=&#34;no&#34;
+    allowfullscreen=&#34;false&#34;&gt;
+&lt;/iframe&gt;
+--&gt;
+&lt;p&gt;It was a lot of fun! Talking about the history of my popular Titanic R notebook on Kaggle was a great opportunity for me to reflect on my data science journey. Its explosive success was very unintended. But as a result I&amp;rsquo;ve got a couple of cool insights to share about this experience and how I apply them in my role as a product manager at Kaggle today.&lt;/p&gt;
+&lt;h2 id=&#34;the-history&#34;&gt;The history&lt;/h2&gt;
+&lt;p&gt;If you haven&amp;rsquo;t come across my introductory ML tutorial on the Titanic Getting Started Competition, then I guess I can&amp;rsquo;t count you among the over half million views it&amp;rsquo;s received in the past 4+ years. &lt;a href=&#34;https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic&#34;&gt;&amp;ldquo;Exploring Survival on the Titanic&amp;rdquo;&lt;/a&gt; was my very first public notebook on Kaggle. According to the notebook&amp;rsquo;s history, I created it in March 2016. And the story behind it is perhaps semi-interesting!&lt;/p&gt;
+&lt;p&gt;Flashback to late 2015, I had recently joined Kaggle as a user. After mastering out of my PhD in linguistics and getting my first job doing data science for market research, I was hoping to tap into and learn from the machine learning community. While I was waiting for Kaggle to launch a good tabular dataset competition to dip my toes into (still waiting &amp;hellip;), I was mostly playing around with their newly launched public datasets.&lt;/p&gt;
+&lt;p&gt;A few months later, Kaggle&amp;rsquo;s newsletter landed in my inbox. They were hiring a part-time content marketing intern. Yes! This could be perfect for me. As the only data scientist at my job, I was eager to make connections and learn in this field. So an opportunity to create content, get feedback, and interview top data scientists was a dream. I applied and after doing an interview and submitting a writing sample, I was asked to do a short test project creating a tutorial notebook.&lt;/p&gt;
+&lt;p&gt;This short project ended up becoming the legendary Titanic notebook! In addition to receiving (at time of writing) 542,816 views, it&amp;rsquo;s been upvoted 3,388 times, forked 6,135 times, and has almost 1,000 comments. I never imagined my work test would become one of the top pieces of content on the platform, even 4+ years later.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons learned&lt;/h2&gt;
+&lt;h3 id=&#34;imperfections-reborn-as-blessings&#34;&gt;Imperfections reborn as blessings&lt;/h3&gt;
+&lt;p&gt;In my interview with Nick, we focused mostly on the bad data viz aspects of my notebook. I explained that the time constraints of the short job test forced me to focus on the aspects which I considered most important:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Delivering an end-to-end tutorial&lt;/li&gt;
+&lt;li&gt;A technical yet fun narrative that showed off my writing skills&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I definitely didn&amp;rsquo;t focus on the quality of the data visualizations in the couple of hours I spent on this notebook. Instead, once I got one part working, I moved on to the next. In some places, I wanted to test what was possible in this new-to-me platform which leads to some unusual choices in retrospect which gave us plenty to talk about (what was I thinking with that mosaic plot?).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.kaggleusercontent.com/kf/2020416/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..7O_SLGfRoS5-KMTnn7m1Gg.TzoJE1yl45bOs1NUIWjrLDScObr1oa4TzMVCkRCgjem3WZDCYGuH9UjCTDSlKF4h270qrX_23Gc9u8LtRtUmfj30gg1PYE4cefcnT8o3WMc_ioQOuOKa8gAXumqgNypgD_VgDW6Lkifbt89thT_C9lDAxzgA7Gdnmz_quoh3ikWeKR6nFL77UYWruoiMbGXdhKGzG2RxaNWEx0C1dNZbDChh0JDR_5LWpUteLSEvuSBpTn5twMGBU8iMddALf7r0KOa49iQk29u5s3BcTElRZfTSkda8yJLmQIg8strYj54kONVCReqZkzo4NsjrZi7Ravo9KAON86eB8MQ_Ic8NUpiJOZ5XxnpBRznRk-7dQ2ESv8T54VmYh4HftGdHIRd3C6jJUeKbJ74CVE6Rupu9RqFsbV_uBcFKVvaCRNV4G1dGWzg2eOu2UOedlfoL6-3yB4louD3LnYE8_MZDVyOdF2TW7DGNiM8n0qX15ZuVlVmBLKAyyg8AyC6zW8TxXG4iHvU2GaEFGMDk970T09xVZcidIGvEYk1Ey7TnBQowLnQqL8IgVnE8DVrN1tfjJfXQEz_ZbrtTXMPjJ0t6r4h4wKoVNO7bgwvoDMFEGU7lU0H2rgEFqkypI6PZ0hHTBHbvLNIo-GZcbhyUO6lz7fnntQ.LTbN0FfZK44JvhmQM0TTqA/__results___files/figure-html/unnamed-chunk-7-1.png&#34;&gt;&lt;figcaption&gt;&lt;em&gt;I can make a mosaic plot! But why?&lt;/em&gt;&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;In the end, I&amp;rsquo;m glad I focused on writing over data visualization or even quality of my code (because this is what I was evaluated on and I got the job, after all). Now that the notebook has seen such success with newcomers to machine learning, I think its flaws are actually a good thing in two ways.&lt;/p&gt;
+&lt;p&gt;First, as you might be able to glean from the comments if you read them, it&amp;rsquo;s very easy to find areas to improve upon my work. This makes this notebook a great launching pad.&lt;/p&gt;
+&lt;p&gt;Second, if you can improve upon something that&amp;rsquo;s as popular as my Titanic notebook, hopefully that gives you a (well deserved) confidence boost as a learner! These kinds of wins are really motivating early on and to the extent this notebook as enabled that feeling for many people, I&amp;rsquo;m really proud of it!&lt;/p&gt;
+&lt;p&gt;In all of this, I experienced how much you stand to learn from the community when you put yourself out there early and often even if it requires knowingly making mistakes in public. Today, as a product manager at Kaggle, this reinforces for me how important it is for Kaggle&amp;rsquo;s community to be open to people from all over the world who are putting themselves out there to ask questions and learn.&lt;/p&gt;
+&lt;h3 id=&#34;code-snippets-as-memes&#34;&gt;Code snippets as memes&lt;/h3&gt;
+&lt;p&gt;Another observation that I shared in my interview with Nick was about how I&amp;rsquo;d see other people copy distinctive bits of my data visualization code in their notebooks. I&amp;rsquo;d notice my plots repurposed for different datasets in my Kaggle newsfeed or just browsing others&amp;rsquo; notebooks. Since I&amp;rsquo;m not particularly enamored with my own data viz work here, it was kind of embarrassing to see my mistakes proliferate!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.kaggleusercontent.com/kf/2020416/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..7O_SLGfRoS5-KMTnn7m1Gg.TzoJE1yl45bOs1NUIWjrLDScObr1oa4TzMVCkRCgjem3WZDCYGuH9UjCTDSlKF4h270qrX_23Gc9u8LtRtUmfj30gg1PYE4cefcnT8o3WMc_ioQOuOKa8gAXumqgNypgD_VgDW6Lkifbt89thT_C9lDAxzgA7Gdnmz_quoh3ikWeKR6nFL77UYWruoiMbGXdhKGzG2RxaNWEx0C1dNZbDChh0JDR_5LWpUteLSEvuSBpTn5twMGBU8iMddALf7r0KOa49iQk29u5s3BcTElRZfTSkda8yJLmQIg8strYj54kONVCReqZkzo4NsjrZi7Ravo9KAON86eB8MQ_Ic8NUpiJOZ5XxnpBRznRk-7dQ2ESv8T54VmYh4HftGdHIRd3C6jJUeKbJ74CVE6Rupu9RqFsbV_uBcFKVvaCRNV4G1dGWzg2eOu2UOedlfoL6-3yB4louD3LnYE8_MZDVyOdF2TW7DGNiM8n0qX15ZuVlVmBLKAyyg8AyC6zW8TxXG4iHvU2GaEFGMDk970T09xVZcidIGvEYk1Ey7TnBQowLnQqL8IgVnE8DVrN1tfjJfXQEz_ZbrtTXMPjJ0t6r4h4wKoVNO7bgwvoDMFEGU7lU0H2rgEFqkypI6PZ0hHTBHbvLNIo-GZcbhyUO6lz7fnntQ.LTbN0FfZK44JvhmQM0TTqA/__results___files/figure-html/unnamed-chunk-11-1.png&#34;&gt;&lt;figcaption&gt;&lt;em&gt;A strobe light in boxplot form, complete with hardcoded values.&lt;/em&gt;&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;Code snippets are kind of like chunks of genetic material. Probably stuff that tends to work pretty well will replicate successfully in an ecosystem. And my notebook had a lot of signals of being a &amp;ldquo;good idea&amp;rdquo; in general: lots of views and upvotes, lots of forks, lots of comments, and highish score on the competition.&lt;/p&gt;
+&lt;p&gt;In general, I&amp;rsquo;d argue that publicly sharing and reusing reproducible code under an open license has been a good thing for developer productivity. But there are plenty of traps, too, as I witnessed my own flawed code go viral like it was some meme. This is something that I think a lot about now in my capacity as a product manager for Kaggle Notebooks (and as someone who previously worked at Stack Overflow). Questions like:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What signals do you use to know some code you&amp;rsquo;re looking at is high quality and trustworthy?&lt;/li&gt;
+&lt;li&gt;How can we make it easier to find and effectively reuse useful, high quality code snippets?&lt;/li&gt;
+&lt;li&gt;How do you safely and easily update code snippets (mine are over four years old and probably still circulating)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Especially if you have thoughts about how to measure quality, I&amp;rsquo;m interested in chatting more!&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Thanks to my willingness to publish what you could call &amp;ldquo;bad data viz&amp;rdquo; today, I&amp;rsquo;ve come a really long ways in my career. It&amp;rsquo;s been an awesome journey from doing a small work test in a notebook to now managing that very notebook product in a few years. In a fun twist of fate, I suppose now I&amp;rsquo;m even responsible for how slowly this page loads due to its popularity!&lt;/p&gt;
+&lt;p&gt;If you want to hear more about my journey and my perspectives on data visualization (including an example of a &amp;ldquo;good&amp;rdquo; data viz), check out &lt;a href=&#34;https://www.twitch.tv/videos/720567732?t=00h20m40s&#34;&gt;my interview on Nick Wan&amp;rsquo;s Twitch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Making public mistakes &amp;amp; code memes: The origin of my famous Titanic notebook 🚢 &lt;a href=&#34;https://t.co/4WzqYRLly9&#34;&gt;https://t.co/4WzqYRLly9&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1298398384529633280?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

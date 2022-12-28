@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>engineering on Meg Risdal</title>
+    <link>https://www.meg.dev/tags/engineering/</link>
+    <description>Recent content in engineering on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@meg.dev (Meg Risdal)</managingEditor>
+    <webMaster>hello@meg.dev (Meg Risdal)</webMaster>
+    <lastBuildDate>Tue, 19 Feb 2019 23:50:25 -0500</lastBuildDate><atom:link href="https://www.meg.dev/tags/engineering/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Amass Engineering Knowledge as a Product Manager</title>
+      <link>https://www.meg.dev/posts/amassing-swe-knowledge-as-a-pm/</link>
+      <pubDate>Tue, 19 Feb 2019 23:50:25 -0500</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/amassing-swe-knowledge-as-a-pm/</guid>
+      <description>&lt;p&gt;For about the past two years, I&amp;rsquo;ve been a product manager at Kaggle where I work on our public data platform as well as (more recently) our Google Cloud Platform integrations team. Lately I&amp;rsquo;ve had the opportunity to do quite a bit of reflection on my career thanks in part to having a mentee (being a mentor is awesome!). The other day she asked me how I &amp;ldquo;amassed as much engineering knowledge as I have&amp;rdquo;. (She asks great questions!) I shared &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1096583566190731264?s=20&#34;&gt;my answer on Twitter&lt;/a&gt; and, you know what, I want to blog more so I&amp;rsquo;m sharing it here, too.&lt;/p&gt;
+&lt;p&gt;Anyway, I had to spend a few days thinking about how to respond in a sage, mentor-ly way because it hasn&amp;rsquo;t been something I was necessarily intentional about (my interest in software development is more of a curiosity, probably). At the same time, I definitely had a couple of motivators for accumulating engineering knowledge.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Product managers spend their days influencing without authority. Understanding and sympathizing with your engineering coworkers can help with this.&lt;/li&gt;
+&lt;li&gt;Apart from the website about goldfish I made when I was 12, I don&amp;rsquo;t already have a background in computer science or software development. I could elaborate on why exactly I include this, but I&amp;rsquo;ll save that for another time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After thinking about her question for a bit and jotting down my thoughts in my favorite note-taking app, Sublime Text, here&amp;rsquo;s what I came up with:&lt;/p&gt;
+&lt;h2 id=&#34;1-invest-time-to-learn-what-it-takes-to-describe-architecture-and-key-services-at-a-high-level&#34;&gt;1. Invest time to learn what it takes to describe architecture and key services at a high level&lt;/h2&gt;
+&lt;p&gt;This is a good idea for two reasons. First, this information should be readily accessible in some form&amp;ndash;take advantage of it! Just ask for the documentation for it or, if necessary, schedule a chat with the owner engineer. Second, this will be one of the highest leverage ways to successfully gauge feasibility of new features. This has saved me a number of times from needing to bother our tech leads.&lt;/p&gt;
+&lt;p&gt;To give an example, when our tech lead was on paternity leave last Northern hemisphere fall, I took over managing our engineering team. Early on, we began experiencing a lot of instability with one of our services. I took the time then to review all of the available architecture and desgin docs (and even a 1hr recorded onboarding video!). From this I was able to draft a design doc proposing specific changes which were ultimately implemented (with a lot of input from my coworkers, of course!).&lt;/p&gt;
+&lt;h2 id=&#34;2-read-engineering-design-docs-for-fun-especially-requirements-and-alternatives-considered&#34;&gt;2. Read engineering design docs for fun, especially requirements and alternatives considered&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s fun, I promise! This is a lot like #2, but it&amp;rsquo;s more about understanding the process, context, and conversation that happens around engineering designs. Plus understanding what&amp;rsquo;s important and why to your coworkers is a great way to empathize with them. And of course, it can also ensure you&amp;rsquo;re up-to-date on things like database schema changes, new services, etc. that might help you answer questions or inspire product ideas in the future. It&amp;rsquo;s helped me in this way a number of times!&lt;/p&gt;
+&lt;h2 id=&#34;3-ask-swes-you-work-with-for-more-technical-details-than-you-may-actually-need&#34;&gt;3. Ask SWEs you work with for more technical details than you may actually need&lt;/h2&gt;
+&lt;p&gt;See, these are all so easy! Even if it&amp;rsquo;s out of pure curiosity that I ask for additional technical details, doing so is a great way to test my knowledge and show my coworkers I care about understanding the problems they&amp;rsquo;re solving. I&amp;rsquo;ve found that my developer coworkers are always more than happy to share.&lt;/p&gt;
+&lt;h2 id=&#34;4-have-and-sometimes-use-a-development-environment-like-your-coworkers&#34;&gt;4. Have (and sometimes use!) a development environment like your coworkers&#39;&lt;/h2&gt;
+&lt;p&gt;Doing this might be relatively minor and is probably not necessary in all (or maybe most) cases, but it&amp;rsquo;s given me a lot of appreciation for how much our team invests in developer productivity and dev tooling. I like knowing how to make minor changes and deploy them. And my coworkers that helped me out liked seeing me contribute to our codebase and were super happy to help. I set up the server-side C# code that creates the CSVs we use for &lt;a href=&#34;https://www.kaggle.com/kaggle/meta-kaggle&#34;&gt;Meta Kaggle&lt;/a&gt;, Kaggle&amp;rsquo;s public dataset about &amp;hellip; Kaggle.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;And so there&amp;rsquo;s what I&amp;rsquo;ve come up with to answer my coworker&amp;rsquo;s question. I&amp;rsquo;m still learning, but these are nonetheless some things that have helped me do my job better (and enjoy it more). The common thread my pieces of advice share, I think, is that they exhibit care for my coworkers, the things they work on, and how they make decisions.&lt;/p&gt;
+&lt;p&gt;My final piece of meta advice from here is to demonstrate that you&amp;rsquo;re listening and working on improving your engineering knowledge. The more you make product decisions with the things you learned through the help of your coworkers as input, the more people will come to trust you. And in turn, they&amp;rsquo;ll share more with you. It&amp;rsquo;s a really rewarding cycle.&lt;/p&gt;
+&lt;p&gt;Be curious. Be empathetic.&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;How to amass SWE knowledge as a PM | &lt;a href=&#34;https://t.co/XpBjapQn3a&#34;&gt;https://t.co/XpBjapQn3a&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1098104382569078784?ref_src=twsrc%5Etfw&#34;&gt;February 20, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

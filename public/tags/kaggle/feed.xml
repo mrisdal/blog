@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kaggle on Meg Risdal</title>
+    <link>https://www.meg.dev/tags/kaggle/</link>
+    <description>Recent content in kaggle on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@meg.dev (Meg Risdal)</managingEditor>
+    <webMaster>hello@meg.dev (Meg Risdal)</webMaster>
+    <lastBuildDate>Sun, 08 Nov 2020 17:03:30 -0800</lastBuildDate><atom:link href="https://www.meg.dev/tags/kaggle/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Kaggle makes GPUs accessible to 5 million data scientists</title>
+      <link>https://www.meg.dev/posts/kaggle-nvidia-gpus/</link>
+      <pubDate>Sun, 08 Nov 2020 17:03:30 -0800</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/kaggle-nvidia-gpus/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://news.developer.nvidia.com/how-kaggle-makes-gpus-accessible-to-5-million-data-scientists/&#34;&gt;This post was first published on NVIDIA&amp;rsquo;s developer blog on Oct 26th 2020&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Engineers and designers at &lt;a href=&#34;https://www.kaggle.com/&#34;&gt;Kaggle&lt;/a&gt; work hard behind the scenes to make it easy for our 5 million data scientist users to focus on learning and improving their deep learning models instead of ML ops like environment setup and resource provisioning.&lt;/p&gt;
+&lt;p&gt;Kaggle’s community comes to the platform to learn and apply their skills in machine learning competitions. To do this, our users use Kaggle Notebooks, a hosted Jupyter-based IDE.&lt;/p&gt;
+&lt;p&gt;Our mission is to help the world learn from data, so we strive to make powerful resources available to our global community at no cost via Kaggle Notebooks. This includes NVIDIA P100 GPUs. Tens of thousands of users train deep learning models with GPUs on Kaggle every month, so ensuring the experience is a good one is key.&lt;/p&gt;
+&lt;p&gt;When making accelerators available to our users, we prioritize two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Maintaining a fast, no-setup experience so users can start writing code within seconds&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Making efficient use of resources so we can extend them to as many users as possible&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Achieving this has been no simple feat. In the rest of this post, I’ll describe a sampling of the engineering and design work our team has done to make this possible.&lt;/p&gt;
+&lt;h2 id=&#34;a-fast-no-setup-user-experience&#34;&gt;A fast, no-setup user experience&lt;/h2&gt;
+&lt;p&gt;Kaggle Notebooks come with popular data science packages like TensorFlow and PyTorch pre-installed in Docker containers (&lt;a href=&#34;https://github.com/kaggle/docker-python&#34;&gt;see the Python image GitHub repo&lt;/a&gt;) that run on Google Compute Engine VMs. Our engineers maintain these Docker images so that our users don’t need to worry about installation and dependency management, a huge barrier to getting started with data science.&lt;/p&gt;
+&lt;p&gt;We &lt;a href=&#34;https://www.kaggle.com/product-feedback/161327&#34;&gt;release updates to our images&lt;/a&gt; about every two weeks. This means users always have easy access to the latest package versions which is important in a fast evolving domain such as machine learning.&lt;/p&gt;
+&lt;p&gt;So that our users have a consistent, reliable experience using GPUs, we have also implemented a suite of tests that runs automatically every hour to catch any regressions in performance.&lt;/p&gt;
+&lt;p&gt;Reproducibility is also important to a fast, no setup user experience. By default, a notebook will always use the Docker image version that it was created with so that code that runs today will still run months later without any special effort. Users also have the option to refer to the latest available image in case they want to make sure they can access new libraries or library versions.&lt;/p&gt;
+&lt;p&gt;Given this setup, we have very, very large Docker images (~30GBs) for which we maintain many versions (over 150 so far at a total size of over 1.5TBs). This frequently risks degrading the user experience (e.g., pulling a full image can take around 10 minutes whereas we want our users to be able to begin writing code within seconds) so we’ve also made investments in reducing this pain point.&lt;/p&gt;
+&lt;p&gt;For example, we now track which libraries are actually used by our community and automatically remove little-used ones. We’ve made other optimizations that together allow a notebook session to start within a matter of seconds.&lt;/p&gt;
+&lt;p&gt;Finally, we recently made our Docker images compatible with the &lt;a href=&#34;https://cloud.google.com/deep-learning-vm&#34;&gt;Deep Learning VM images used by Cloud AI Notebooks&lt;/a&gt; so that users could easily &lt;a href=&#34;https://www.kaggle.com/product-feedback/159602&#34;&gt;export their notebook and its dependencies to GCP&lt;/a&gt;. This allows our users to pay for even more powerful compute without running into breaking changes.&lt;/p&gt;
+&lt;h2 id=&#34;efficient-use-of-resources&#34;&gt;Efficient use of resources&lt;/h2&gt;
+&lt;p&gt;Providing access to GPUs at no cost to our users is an amazing thing, but our ability to do so isn’t unlimited. To make GPUs available to as many people as possible while maintaining a smooth user experience, our team has undertaken various wastage mitigation measures.&lt;/p&gt;
+&lt;p&gt;Recently, we &lt;a href=&#34;https://medium.com/google-cloud/a-multi-cluster-grpc-architecture-on-gke-365bbd757df&#34;&gt;re-architected the backend service&lt;/a&gt; that provisions sessions for thousands of concurrent notebooks. One of the important new features we implemented was autoscaling for our VM pools. This allowed us to automatically keep a warm pool of GPU VMs at a capacity that’s a percentage above actual demand as opposed to some fixed size. Ultimately, this helped to reduce our costs by 36% while ensuring our users almost never end up in queues waiting for a machine to become available.&lt;/p&gt;
+&lt;p&gt;We also continually strive to eliminate abuse. We love to see our community share notebooks like &lt;a href=&#34;https://www.kaggle.com/hubwag/rapids-umap-with-fisher-metric-on-rgb-histograms&#34;&gt;“RAPIDS/UMAP with Fisher metric on RGB histograms”&lt;/a&gt; on our &lt;a href=&#34;https://www.kaggle.com/c/siim-isic-melanoma-classification/notebooks?sortBy=voteCount&amp;amp;group=everyone&amp;amp;pageSize=20&amp;amp;competitionId=20270&#34;&gt;melanoma classification competition&lt;/a&gt;. Not notebooks used for cryptocurrency mining. Our efforts here have allowed us to continue to extend these powerful resources to legitimate users.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/tFZpyALE0OhZjforc-AlrQXuiJNLyoKHwjBD8rH_IWnJ6k1fpNOdomR1BxO_8NqVKfOczjtr53MBBgxNvOVzBz1evWWEucqcqyTVpqJABB1uTFtHR8bfW0_d9jkago6h40Q0BPrQWQ&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.kaggle.com/hubwag/rapids-umap-with-fisher-metric-on-rgb-histograms&#34;&gt;3D UMAP embeddings&lt;/a&gt; of melanoma RBG histograms created by &lt;a href=&#34;https://www.kaggle.com/hubwag&#34;&gt;Hubert Wagner&lt;/a&gt; using a GPU enabled Kaggle Notebook&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Finally, we’ve made changes in the notebook editor’s frontend to make it easier for our users to more effectively manage their limited accelerator quota (30h/week). For example, we recently made it &lt;a href=&#34;https://admin.kaggle.com/product-feedback/152669&#34;&gt;easier for users to power a session on and off&lt;/a&gt; within seconds; previously, the session start time could take 30 seconds to a few minutes. Additionally, it’s now possible to edit code interactively without an accelerator and &lt;a href=&#34;https://admin.kaggle.com/product-feedback/161328&#34;&gt;only use a GPU when saving a new version&lt;/a&gt; (executing the notebook top-to-bottom).&lt;/p&gt;
+&lt;h2 id=&#34;get-started-with-gpus-on-kaggle&#34;&gt;Get started with GPUs on Kaggle&lt;/h2&gt;
+&lt;p&gt;Kaggle is a great place to learn how to train deep learning models using GPUs. We have a number of &lt;a href=&#34;https://www.kaggle.com/learn/overview&#34;&gt;Courses&lt;/a&gt;, series of lessons and interactive notebooks, including &lt;a href=&#34;https://www.kaggle.com/learn/deep-learning&#34;&gt;Deep Learning&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can apply what you learn in a machine learning &lt;a href=&#34;https://www.kaggle.com/competitions&#34;&gt;Competition&lt;/a&gt;, for example our ongoing Getting Started NLP Competition to &lt;a href=&#34;https://www.kaggle.com/c/nlp-getting-started&#34;&gt;predict which tweets are about real disasters or not&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, you can browse any of the &lt;a href=&#34;https://www.kaggle.com/search?q=tag%3Agpu+in%3Anotebooks&#34;&gt;over 30,000 public GPU notebooks&lt;/a&gt; shared on Kaggle. Then, simply click the “Copy &amp;amp; Edit” button to begin editing and running code.&lt;/p&gt;
+&lt;p&gt;We hope it’s fast and easy to get started, but if you have feedback &lt;a href=&#34;https://www.kaggle.com/product-feedback&#34;&gt;please let us know&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thank you to Vincent Roseberry, Dustin Herbison, Philippe Modard, and Anna Montoya for their feedback on this post.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Cross-posting my post for NVIDIA on my personal blog. Read how we make GPUs accessible to Kaggle&amp;#39;s community of data scientist. 👩‍💻 &lt;a href=&#34;https://t.co/7v3hotdkp1&#34;&gt;https://t.co/7v3hotdkp1&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1325607215911235584?ref_src=twsrc%5Etfw&#34;&gt;November 9, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Making public mistakes &amp; code memes: The origin of my famous Titanic notebook</title>
+      <link>https://www.meg.dev/posts/my-titanic-notebook/</link>
+      <pubDate>Tue, 25 Aug 2020 13:38:46 -0700</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/my-titanic-notebook/</guid>
+      <description>&lt;p&gt;Yesterday, it was a great honor to be a guest on &lt;a href=&#34;https://twitter.com/nickwan&#34;&gt;Nick Wan&amp;rsquo;s&lt;/a&gt; data science livestream on Twitch to &lt;a href=&#34;https://www.twitch.tv/videos/720567732?t=00h20m40s&#34;&gt;talk through bad (and less bad) data viz that I&amp;rsquo;ve created&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- In case I can get this working later
+&lt;iframe
+    src=&#34;https://player.twitch.tv/?video=v720567732&amp;time=00h20m40s&#34;
+    height=&#34;300&#34;
+    width=&#34;400&#34;
+    frameborder=&#34;0&#34;
+    scrolling=&#34;no&#34;
+    allowfullscreen=&#34;false&#34;&gt;
+&lt;/iframe&gt;
+--&gt;
+&lt;p&gt;It was a lot of fun! Talking about the history of my popular Titanic R notebook on Kaggle was a great opportunity for me to reflect on my data science journey. Its explosive success was very unintended. But as a result I&amp;rsquo;ve got a couple of cool insights to share about this experience and how I apply them in my role as a product manager at Kaggle today.&lt;/p&gt;
+&lt;h2 id=&#34;the-history&#34;&gt;The history&lt;/h2&gt;
+&lt;p&gt;If you haven&amp;rsquo;t come across my introductory ML tutorial on the Titanic Getting Started Competition, then I guess I can&amp;rsquo;t count you among the over half million views it&amp;rsquo;s received in the past 4+ years. &lt;a href=&#34;https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic&#34;&gt;&amp;ldquo;Exploring Survival on the Titanic&amp;rdquo;&lt;/a&gt; was my very first public notebook on Kaggle. According to the notebook&amp;rsquo;s history, I created it in March 2016. And the story behind it is perhaps semi-interesting!&lt;/p&gt;
+&lt;p&gt;Flashback to late 2015, I had recently joined Kaggle as a user. After mastering out of my PhD in linguistics and getting my first job doing data science for market research, I was hoping to tap into and learn from the machine learning community. While I was waiting for Kaggle to launch a good tabular dataset competition to dip my toes into (still waiting &amp;hellip;), I was mostly playing around with their newly launched public datasets.&lt;/p&gt;
+&lt;p&gt;A few months later, Kaggle&amp;rsquo;s newsletter landed in my inbox. They were hiring a part-time content marketing intern. Yes! This could be perfect for me. As the only data scientist at my job, I was eager to make connections and learn in this field. So an opportunity to create content, get feedback, and interview top data scientists was a dream. I applied and after doing an interview and submitting a writing sample, I was asked to do a short test project creating a tutorial notebook.&lt;/p&gt;
+&lt;p&gt;This short project ended up becoming the legendary Titanic notebook! In addition to receiving (at time of writing) 542,816 views, it&amp;rsquo;s been upvoted 3,388 times, forked 6,135 times, and has almost 1,000 comments. I never imagined my work test would become one of the top pieces of content on the platform, even 4+ years later.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons learned&lt;/h2&gt;
+&lt;h3 id=&#34;imperfections-reborn-as-blessings&#34;&gt;Imperfections reborn as blessings&lt;/h3&gt;
+&lt;p&gt;In my interview with Nick, we focused mostly on the bad data viz aspects of my notebook. I explained that the time constraints of the short job test forced me to focus on the aspects which I considered most important:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Delivering an end-to-end tutorial&lt;/li&gt;
+&lt;li&gt;A technical yet fun narrative that showed off my writing skills&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I definitely didn&amp;rsquo;t focus on the quality of the data visualizations in the couple of hours I spent on this notebook. Instead, once I got one part working, I moved on to the next. In some places, I wanted to test what was possible in this new-to-me platform which leads to some unusual choices in retrospect which gave us plenty to talk about (what was I thinking with that mosaic plot?).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.kaggleusercontent.com/kf/2020416/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..7O_SLGfRoS5-KMTnn7m1Gg.TzoJE1yl45bOs1NUIWjrLDScObr1oa4TzMVCkRCgjem3WZDCYGuH9UjCTDSlKF4h270qrX_23Gc9u8LtRtUmfj30gg1PYE4cefcnT8o3WMc_ioQOuOKa8gAXumqgNypgD_VgDW6Lkifbt89thT_C9lDAxzgA7Gdnmz_quoh3ikWeKR6nFL77UYWruoiMbGXdhKGzG2RxaNWEx0C1dNZbDChh0JDR_5LWpUteLSEvuSBpTn5twMGBU8iMddALf7r0KOa49iQk29u5s3BcTElRZfTSkda8yJLmQIg8strYj54kONVCReqZkzo4NsjrZi7Ravo9KAON86eB8MQ_Ic8NUpiJOZ5XxnpBRznRk-7dQ2ESv8T54VmYh4HftGdHIRd3C6jJUeKbJ74CVE6Rupu9RqFsbV_uBcFKVvaCRNV4G1dGWzg2eOu2UOedlfoL6-3yB4louD3LnYE8_MZDVyOdF2TW7DGNiM8n0qX15ZuVlVmBLKAyyg8AyC6zW8TxXG4iHvU2GaEFGMDk970T09xVZcidIGvEYk1Ey7TnBQowLnQqL8IgVnE8DVrN1tfjJfXQEz_ZbrtTXMPjJ0t6r4h4wKoVNO7bgwvoDMFEGU7lU0H2rgEFqkypI6PZ0hHTBHbvLNIo-GZcbhyUO6lz7fnntQ.LTbN0FfZK44JvhmQM0TTqA/__results___files/figure-html/unnamed-chunk-7-1.png&#34;&gt;&lt;figcaption&gt;&lt;em&gt;I can make a mosaic plot! But why?&lt;/em&gt;&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;In the end, I&amp;rsquo;m glad I focused on writing over data visualization or even quality of my code (because this is what I was evaluated on and I got the job, after all). Now that the notebook has seen such success with newcomers to machine learning, I think its flaws are actually a good thing in two ways.&lt;/p&gt;
+&lt;p&gt;First, as you might be able to glean from the comments if you read them, it&amp;rsquo;s very easy to find areas to improve upon my work. This makes this notebook a great launching pad.&lt;/p&gt;
+&lt;p&gt;Second, if you can improve upon something that&amp;rsquo;s as popular as my Titanic notebook, hopefully that gives you a (well deserved) confidence boost as a learner! These kinds of wins are really motivating early on and to the extent this notebook as enabled that feeling for many people, I&amp;rsquo;m really proud of it!&lt;/p&gt;
+&lt;p&gt;In all of this, I experienced how much you stand to learn from the community when you put yourself out there early and often even if it requires knowingly making mistakes in public. Today, as a product manager at Kaggle, this reinforces for me how important it is for Kaggle&amp;rsquo;s community to be open to people from all over the world who are putting themselves out there to ask questions and learn.&lt;/p&gt;
+&lt;h3 id=&#34;code-snippets-as-memes&#34;&gt;Code snippets as memes&lt;/h3&gt;
+&lt;p&gt;Another observation that I shared in my interview with Nick was about how I&amp;rsquo;d see other people copy distinctive bits of my data visualization code in their notebooks. I&amp;rsquo;d notice my plots repurposed for different datasets in my Kaggle newsfeed or just browsing others&amp;rsquo; notebooks. Since I&amp;rsquo;m not particularly enamored with my own data viz work here, it was kind of embarrassing to see my mistakes proliferate!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.kaggleusercontent.com/kf/2020416/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..7O_SLGfRoS5-KMTnn7m1Gg.TzoJE1yl45bOs1NUIWjrLDScObr1oa4TzMVCkRCgjem3WZDCYGuH9UjCTDSlKF4h270qrX_23Gc9u8LtRtUmfj30gg1PYE4cefcnT8o3WMc_ioQOuOKa8gAXumqgNypgD_VgDW6Lkifbt89thT_C9lDAxzgA7Gdnmz_quoh3ikWeKR6nFL77UYWruoiMbGXdhKGzG2RxaNWEx0C1dNZbDChh0JDR_5LWpUteLSEvuSBpTn5twMGBU8iMddALf7r0KOa49iQk29u5s3BcTElRZfTSkda8yJLmQIg8strYj54kONVCReqZkzo4NsjrZi7Ravo9KAON86eB8MQ_Ic8NUpiJOZ5XxnpBRznRk-7dQ2ESv8T54VmYh4HftGdHIRd3C6jJUeKbJ74CVE6Rupu9RqFsbV_uBcFKVvaCRNV4G1dGWzg2eOu2UOedlfoL6-3yB4louD3LnYE8_MZDVyOdF2TW7DGNiM8n0qX15ZuVlVmBLKAyyg8AyC6zW8TxXG4iHvU2GaEFGMDk970T09xVZcidIGvEYk1Ey7TnBQowLnQqL8IgVnE8DVrN1tfjJfXQEz_ZbrtTXMPjJ0t6r4h4wKoVNO7bgwvoDMFEGU7lU0H2rgEFqkypI6PZ0hHTBHbvLNIo-GZcbhyUO6lz7fnntQ.LTbN0FfZK44JvhmQM0TTqA/__results___files/figure-html/unnamed-chunk-11-1.png&#34;&gt;&lt;figcaption&gt;&lt;em&gt;A strobe light in boxplot form, complete with hardcoded values.&lt;/em&gt;&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;Code snippets are kind of like chunks of genetic material. Probably stuff that tends to work pretty well will replicate successfully in an ecosystem. And my notebook had a lot of signals of being a &amp;ldquo;good idea&amp;rdquo; in general: lots of views and upvotes, lots of forks, lots of comments, and highish score on the competition.&lt;/p&gt;
+&lt;p&gt;In general, I&amp;rsquo;d argue that publicly sharing and reusing reproducible code under an open license has been a good thing for developer productivity. But there are plenty of traps, too, as I witnessed my own flawed code go viral like it was some meme. This is something that I think a lot about now in my capacity as a product manager for Kaggle Notebooks (and as someone who previously worked at Stack Overflow). Questions like:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What signals do you use to know some code you&amp;rsquo;re looking at is high quality and trustworthy?&lt;/li&gt;
+&lt;li&gt;How can we make it easier to find and effectively reuse useful, high quality code snippets?&lt;/li&gt;
+&lt;li&gt;How do you safely and easily update code snippets (mine are over four years old and probably still circulating)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Especially if you have thoughts about how to measure quality, I&amp;rsquo;m interested in chatting more!&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Thanks to my willingness to publish what you could call &amp;ldquo;bad data viz&amp;rdquo; today, I&amp;rsquo;ve come a really long ways in my career. It&amp;rsquo;s been an awesome journey from doing a small work test in a notebook to now managing that very notebook product in a few years. In a fun twist of fate, I suppose now I&amp;rsquo;m even responsible for how slowly this page loads due to its popularity!&lt;/p&gt;
+&lt;p&gt;If you want to hear more about my journey and my perspectives on data visualization (including an example of a &amp;ldquo;good&amp;rdquo; data viz), check out &lt;a href=&#34;https://www.twitch.tv/videos/720567732?t=00h20m40s&#34;&gt;my interview on Nick Wan&amp;rsquo;s Twitch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Making public mistakes &amp;amp; code memes: The origin of my famous Titanic notebook 🚢 &lt;a href=&#34;https://t.co/4WzqYRLly9&#34;&gt;https://t.co/4WzqYRLly9&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1298398384529633280?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How our team improved perceived reliability of Kaggle Notebooks</title>
+      <link>https://www.meg.dev/posts/improved-kaggle-notebooks-reliability/</link>
+      <pubDate>Thu, 13 Aug 2020 15:18:44 -0700</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/improved-kaggle-notebooks-reliability/</guid>
+      <description>&lt;p&gt;I’ve worked at Kaggle on-and-off since 2016. In this time, THE most consistent source of user feedback is about the reliability of &lt;a href=&#34;https://www.kaggle.com/notebooks&#34;&gt;Kaggle Notebooks&lt;/a&gt;. Sessions were slow to start and, far worse, sometimes users would lose hours of work. While progress had been made over the years, we’d never systematically addressed the problems.&lt;/p&gt;
+&lt;p&gt;Over the past half year or so since I’ve rejoined Kaggle, the Notebooks team renewed its focus on reliability. In this post, I&amp;rsquo;m proud to share how our team used a systematic approach to significantly improve reliability, both in terms of quantitative metrics as well as user perceptions.&lt;/p&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Kaggle Notebooks is a no-cost managed &lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter-based&lt;/a&gt; notebook product. Our users use Python and R notebooks to analyze datasets, train models, and submit predictions to machine learning competitions. Today we manage many thousands of VMs handling thousands of concurrent sessions for users all around the globe.&lt;/p&gt;
+&lt;p&gt;When I joined in 2020, we felt confident that reliability was the number one thing we could work on to improve our users’ experience using Kaggle Notebooks. We knew this from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;a href=&#34;https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43221.pdf&#34;&gt;happiness and tracking survey&lt;/a&gt; we send to a sample of users each month&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The volume of bug reports on our &lt;a href=&#34;https://www.kaggle.com/product-feedback&#34;&gt;site feedback forums&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Improving user experience is a critical priority for Kaggle for a few reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Notebook usage is required for some competitions and we don’t want the user experience to be such a pain that it turns users off participating completely.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many brand new data science learners use Notebooks and if you’re new to something, sometimes it’s hard to tell if bugs and instability are your fault or not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We want users to use Kaggle Notebooks enough to create cool, helpful analyses that they want to share with the community.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;our-approach&#34;&gt;Our approach&lt;/h2&gt;
+&lt;p&gt;In our approach to the problem, we considered reliability as having two facets: actual and perceived. In the first half of 2020, we prioritized a number of focused improvements to address both facets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;We maintained a dedicated working group to address a backlog of issues and monitor and respond to user feedback.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We implemented a new scalable, highly available backend architecture (&lt;a href=&#34;https://medium.com/google-cloud/a-multi-cluster-grpc-architecture-on-gke-365bbd757df&#34;&gt;read about it from Mod&lt;/a&gt;, the technical lead on the project) with multiregion support.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We shipped features to improve perceived reliability like “sessionless editing”, a &lt;a href=&#34;https://www.kaggle.com/product-feedback/139884&#34;&gt;brand new save workflow&lt;/a&gt;, and better session start/stop controls in the UI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We feel the biggest game-changer was the &lt;a href=&#34;https://www.kaggle.com/product-feedback/152669&#34;&gt;sessionless editing&lt;/a&gt; feature that we delivered in June. Previously, rendering the notebook required a running jupyter server. But, starting the session took over a minute at the 95th percentile and about half a minute at the 50th percentile. This was a huge point of frustration for our users that we hypothesized contributed substantially to perceptions of poor reliability. With sessionless editing, we can now render and initialize the notebook editor within seconds.&lt;/p&gt;
+&lt;p&gt;The gif below illustrates a side-by-side comparison of the experience before and after launching our sessionless editing feature.&lt;/p&gt;
+&lt;img src=&#34;https://lh6.googleusercontent.com/M4JW0ArB84eEPsvv5QPvSfj5mgmiyGShz2Z7G864Xtew7KWHGc-U9-FPlLdPwHDGOsVknZie7SOfDhdJcjbHr79XeaeLgXeRKoz1GmusJ-0XHSDW8vv9MlvCt7gfulhi4sMmJjASOA&#34;&gt;
+&lt;figcaption&gt;_Less waiting, more coding._&lt;/figcaption&gt;
+&lt;p&gt;Next, measuring impact was critical. To match actual and perceived reliability, we took a multi-modal approach to quantifying the results of our efforts.&lt;/p&gt;
+&lt;p&gt;To measure actual reliability, our reliability working group created a dashboard to monitor and set goals against some key metrics like availability and time-to-edit latency.&lt;/p&gt;
+&lt;p&gt;In part to measure perceived reliability on an ongoing basis, we also started a quarterly one-question survey. It asks recent notebooks users to “Please select any of the issues below that you have experienced on Kaggle Notebooks in the past couple of months”. Users could then select multiple options like “Notebook session was unreliable” and “Insufficient features available”. We fielded the survey twice: once at the end of Q1 and again at the end of Q2.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;I’ll focus on the qualitative results in response to the one-question reliability survey. Our quantitative data showed progress, but would require a longer blog post to walk through.&lt;/p&gt;
+&lt;p&gt;First, you can see the overall results below.&lt;/p&gt;
+&lt;img src=&#34;https://lh5.googleusercontent.com/ZFxsZkuPKlMNm64NdbU8Wf07xhdO3TLfSsKdatZqk_zkjxwo48W6-FKLHLKu3h_amLMHC0Y9AeWnzQn1P4vEaSxcNF_kHPgER34N6e-8o4h1yyKeSn1mLCS3PEnuSry7HZcD4eG0yw&#34;&gt;
+&lt;figcaption&gt;_Overall issues that survey respondents said they experience using Kaggle Notebooks._&lt;/figcaption&gt;
+&lt;p&gt;Most users in both quarters reported having no recent issues which is great. But, reliability (i.e., “Notebook session was unreliable”) was the second most common response in both quarters. Reliability concerns definitely still persist among respondents.&lt;/p&gt;
+&lt;p&gt;When we focus on percentage change between Q1 and Q2, however, it becomes clear that we did successfully make progress in the right direction.&lt;/p&gt;
+&lt;img src=&#34;https://lh3.googleusercontent.com/FSuAei-kyBuW76fb9v0V8va91RgmFGfIB98cFD_St4iWTPfx1GC7qBQfzFh0G26i2OKKBm5L9shfD3Wlagjgn2jO8TbTrQSOJYdHovEAxvG1BqYLRmI_EJsEMHujFHdhy4ahtyPGyA&#34;&gt;
+&lt;figcaption&gt;_Percentage change from quarter-to-quarter for each issue._&lt;/figcaption&gt;
+&lt;p&gt;Because most of these items are issues (i.e., pain points), an increase from Q1 to Q2 is generally bad (red) whereas a decrease is generally good (blue). Only some of the changes are actually significant (the solid-filled bars).&lt;/p&gt;
+&lt;p&gt;We saw statistically significant decreases in users mentioning:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;📉 33%: Can&amp;rsquo;t depend on notebooks to do serious work&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📉 19%: Session was unreliable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📉 18%: Session was slow&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even though reliability still remains a top concern for our users, we were really pleased with these results. Plus, this is the first time we’ve quantified user perceptions to tell us that we’re making progress.&lt;/p&gt;
+&lt;h2 id=&#34;takeaways&#34;&gt;Takeaways&lt;/h2&gt;
+&lt;p&gt;The biggest takeaway is that we’re not done yet, but we’re trending in the right direction. We remind ourselves regularly that this is a journey and what matters is being on the right track. Based on our results so far, we intend to maintain our dedicated reliability working group, set new goals, and continue to listen to user feedback.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Massive thanks to everyone on the team who contributed to this effort: &lt;a href=&#34;https://www.kaggle.com/aagundez&#34;&gt;Aurelio&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/jplotts&#34;&gt;Jim&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/herbison&#34;&gt;Dustin&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/noderaider&#34;&gt;Cole&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/gphilmod&#34;&gt;Philippe (Mod)&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/mbooth&#34;&gt;Michael&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/rosebv&#34;&gt;Vincent&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/erdalsivri&#34;&gt;Erdal&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/einavcb&#34;&gt;Einav&lt;/a&gt;, &lt;a href=&#34;https://www.kaggle.com/craerek&#34;&gt;Chelsea&lt;/a&gt;. It’s an honor and a thrill to be part of such a great team.  Special thanks to Jim who co-authored the original internal report that this blog post is based on and to &lt;a href=&#34;https://www.kaggle.com/jessicali9530&#34;&gt;Jessica&lt;/a&gt; for fielding the survey. Last but far from least, thank you to our users for your invaluable feedback and your patience!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;How we improved perceived reliability of Kaggle Notebooks &lt;a href=&#34;https://t.co/sMjgtqaKrN&#34;&gt;https://t.co/sMjgtqaKrN&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1294039078933901312?ref_src=twsrc%5Etfw&#34;&gt;August 13, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

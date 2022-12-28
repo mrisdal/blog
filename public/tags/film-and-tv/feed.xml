@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>film and tv on Meg Risdal</title>
+    <link>https://www.meg.dev/tags/film-and-tv/</link>
+    <description>Recent content in film and tv on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@meg.dev (Meg Risdal)</managingEditor>
+    <webMaster>hello@meg.dev (Meg Risdal)</webMaster>
+    <lastBuildDate>Tue, 09 Apr 2019 01:43:59 -0400</lastBuildDate><atom:link href="https://www.meg.dev/tags/film-and-tv/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product Management as an Episode of Black Mirror</title>
+      <link>https://www.meg.dev/posts/product-management-as-an-episode-of-black-mirror/</link>
+      <pubDate>Tue, 09 Apr 2019 01:43:59 -0400</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/product-management-as-an-episode-of-black-mirror/</guid>
+      <description>&lt;p&gt;Being a product manager on a small remote, distributed team reminds me a lot of the Black Mirror episode, &lt;a href=&#34;https://en.wikipedia.org/wiki/Be_Right_Back&#34;&gt;&lt;em&gt;Be Right Back&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this episode of the sci-fi anthology series, a woman uses an AI service to bring back her recently deceased partner. She does so by uploading all of their text messages, emails, voicemails, and any other computer-mediated conversation she shared with him to the, uhh, Cloud I suppose. That&amp;rsquo;s one use case for GDPR data requests! All of this data was then used to train a super language model to embody (literally) a clone of her prematurely departed husband.&lt;/p&gt;
+&lt;p&gt;So, what does this have to do with being a product manager on a remote, distributed team? The sheer volume of written text I produce, of course! So much you could nearly hope to train a clone of me someday, language model and all.&lt;/p&gt;
+&lt;img src=&#34;https://source.unsplash.com/eOSqRq2Qm1c/800x450&#34;&gt;
+&lt;figcaption&gt;_Photo by David Clode on Unsplash_&lt;/figcaption&gt;
+&lt;p&gt;On remote, distributed teams, asynchronous, high quality communication is essential. Now, I &lt;em&gt;only&lt;/em&gt; have experience working on remote, distributed teams (so nothing to compare it to), but hopefully this becomes more of the norm. And in any case I think there are a lot of great reasons to write and write a LOT as a product manager. And ideally, you write in a way that faithfully transfers your product thinking, insights, and vision faithfully to Google Docs text and formatting.&lt;/p&gt;
+&lt;p&gt;Here are a few reasons why I think Black Mirror worthy documentation should be a best practice regardless of whether you&amp;rsquo;re colocated and shoulder-to-shoulder or if multiple timezones separate you and your closest collaborators:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A no-brainer (maybe literally if this catches on): Clearly written specs should enable my coworkers to focus on building uninterrupted as much as possible.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Propaganda!&amp;rdquo; Framing my artifacts up-front with context which is an opportunity to weave a consistent thread in the story I want to weave for our product&amp;rsquo;s direction. It then becomes a story I can trust my team to internalize.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s like designing a redundant system&amp;hellip; if I make myself partly redundant through documentation, I might be able to afford to spend some of my time on a bit of extra higher level strategy and planning here and there. ;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So there you go, that&amp;rsquo;s why being a product manager at a remote, distributed company is like being in an episode of Black Mirror (except in a good way!).&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Product management as an episode of Black Mirror &lt;a href=&#34;https://t.co/SSvu9lgbUV&#34;&gt;https://t.co/SSvu9lgbUV&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1115500289891557377?ref_src=twsrc%5Etfw&#34;&gt;April 9, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wfh on Meg Risdal</title>
+    <link>https://www.meg.dev/tags/wfh/</link>
+    <description>Recent content in wfh on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@meg.dev (Meg Risdal)</managingEditor>
+    <webMaster>hello@meg.dev (Meg Risdal)</webMaster>
+    <lastBuildDate>Sun, 29 Mar 2020 14:51:50 -0400</lastBuildDate><atom:link href="https://www.meg.dev/tags/wfh/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kaggle’s 5 remote-first tips for new WFHers</title>
+      <link>https://www.meg.dev/posts/kaggle-wfh-tips/</link>
+      <pubDate>Sun, 29 Mar 2020 14:51:50 -0400</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/kaggle-wfh-tips/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This post was originally &lt;a href=&#34;https://dev.to/mrisdal/kaggle-s-5-remote-first-tips-for-new-wfhers-3a4g&#34;&gt;published on DEV&lt;/a&gt;. My teammate &lt;a href=&#34;https://twitter.com/vimota&#34;&gt;Victor Mota&lt;/a&gt; and I wrote it together. You can check out &lt;a href=&#34;https://vimota.me/writing&#34;&gt;his blog here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/&#34;&gt;Kaggle&lt;/a&gt; is a unique team at Google. Unlike the vast majority of Google teams, our team is fully remote-first and distributed in offices (Google and home) across North America and Australia. When the spread of COVID-19 led to mandates to &lt;strong&gt;work from home (WFH)&lt;/strong&gt;, my coworker &lt;a href=&#34;https://twitter.com/vimota&#34;&gt;Victor&lt;/a&gt; and I saw an opportunity to share insights from our team to help others across Google adapt.&lt;/p&gt;
+&lt;p&gt;So we recently shared our top five remote-first tips with Cloud AI leadership, our parent organization within Google. Now, we want to share our advice with you! The advice we put together is based on the things that we believe either require the biggest behavior shift or stand the best chance of increasing productivity to address pain points in this time of transition.&lt;/p&gt;
+&lt;img src=&#34;https://lh3.googleusercontent.com/_2DqxUWQbNQPDl30igL5GyIRl-M6v10c8FPBOYu43Yqq2mxWQL1coExNhqG8KmWOG0krhWrrdFX6inVwmRL-jddLqg37LE3qYkAIvaZo1EAKkvXdi2Tl-yk7weTMTalklXoKjSGa&#34;&gt;
+&lt;figcaption&gt;_Victor and me presenting our WFH tips to WFH Google Cloud AI leaders … while WFH_&lt;/figcaption&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;First, to establish a bit more context, I’ll share more about Kaggle. Our team is made up of about 50 members in engineering, marketing, product management, data science, design, etc. Kaggle has been remote-first for about a decade.&lt;/p&gt;
+&lt;p&gt;Second, our core values are important to framing how we approach remote-first.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Low ego&lt;/strong&gt; because it facilitates trust and open communication&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;User first&lt;/strong&gt; because it drives focus on important problems to solve&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Agility&lt;/strong&gt; because it helps us make decisions quickly in ambiguity&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You may want to consider how you can leverage aspects of your team’s culture to reinforce WFH productivity.&lt;/p&gt;
+&lt;h2 id=&#34;tip-1-default-open&#34;&gt;Tip #1: Default open&lt;/h2&gt;
+&lt;h3 id=&#34;-problem&#34;&gt;🙅‍♀️ Problem&lt;/h3&gt;
+&lt;p&gt;Your team may be feeling isolated, out of the loop, and siloed. Team members may be communicating one on one but missing the sense of team and community. This can cause anything from miscommunications or dropped balls to serious tensions and degrading trust on your team.&lt;/p&gt;
+&lt;h3 id=&#34;-remote-first-solution&#34;&gt;✅ Remote-first solution&lt;/h3&gt;
+&lt;p&gt;Default to communicating as openly and transparently as possible with your team. Make extensive use of public (to your team), readily accessible communication channels.&lt;/p&gt;
+&lt;h3 id=&#34;-tactics-for-your-teams&#34;&gt;🛠 Tactics for your teams&lt;/h3&gt;
+&lt;h4 id=&#34;deliberately-communicate-more-frequently-than-you-think-you-need-to&#34;&gt;Deliberately communicate more frequently than you think you need to&lt;/h4&gt;
+&lt;p&gt;Communicate more frequently. Also make sure you’re not simply shouting into a void, but ensure that your team hears and understands, as well. Make sure your calendar events and Google Docs are visible by all by default.&lt;/p&gt;
+&lt;h4 id=&#34;share-meeting-summaries--action-items-in-a-public-to-your-team-venue&#34;&gt;Share meeting summaries / action items in a public (to your team) venue&lt;/h4&gt;
+&lt;p&gt;Take good meeting notes and share out summaries or action items in a public venue. GitLab has more great remote meeting tips in their &lt;a href=&#34;https://about.gitlab.com/company/culture/all-remote/meetings/&#34;&gt;handbook&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;if-you-repeat-something-verbally-in-11s-write-it-down-in-a-google-doc-and-share&#34;&gt;If you repeat something verbally in 1:1s, write it down in a Google Doc and share&lt;/h4&gt;
+&lt;p&gt;Don’t succumb to games of telephone. If something seems to be remotely important write it down. If your team doesn’t already formally document everything, this may make certain things feel more “official” than they might really be. The next tactic is one way to help make this adjustment.&lt;/p&gt;
+&lt;h4 id=&#34;make-wip-docs-available-for-input-from-more-people-earlier&#34;&gt;Make WIP docs available for input from more people earlier&lt;/h4&gt;
+&lt;p&gt;Get feedback earlier on things in progress. Normally you would get feedback about ideas or projects in progress during “watercooler chat”. This is a way to replicate that and you might find that you even get more diverse and creative input.&lt;/p&gt;
+&lt;img src=&#34;https://lh3.googleusercontent.com/4ZoTo6RKCAYXLwF_RPvnBYdtN_Q0EQ_2diwx4_JHoBrdfTfd42fe45WctyDdpPcLw4XfgrslXSEzG3jpuiTk_aK_aPTAPDd0nHlTGKX3Tm47n9J9CDRNkWhipQWYR1_q63q7qwqB&#34;&gt;
+&lt;figcaption&gt;_Making important documents easily accessible to anyone on the team_&lt;/figcaption&gt;
+&lt;h2 id=&#34;tip-2-practice-async-communication&#34;&gt;Tip #2: Practice async communication&lt;/h2&gt;
+&lt;h3 id=&#34;-problem-1&#34;&gt;🙅‍♀️ Problem&lt;/h3&gt;
+&lt;p&gt;Feedback loops are slow. Team members are AFK and unresponsive during typical working hours. This can slow projects down and leave people feeling frustrated.&lt;/p&gt;
+&lt;h3 id=&#34;-remote-first-solution-1&#34;&gt;✅ Remote-first solution&lt;/h3&gt;
+&lt;p&gt;Move more communication to async, setting norms and expectations so work still gets done efficiently. Kaggle’s team is distributed across many time zones so this is really important for us. Your teams may not be so distributed as ours, but at a time when so many team members’ schedules are becoming unpredictable or shifted, async can be critical.&lt;/p&gt;
+&lt;h3 id=&#34;-tactics-for-your-teams-1&#34;&gt;🛠 Tactics for your teams&lt;/h3&gt;
+&lt;h4 id=&#34;agree-on-team-wide-expectations-around-hours-of-communication-and-availability&#34;&gt;Agree on team-wide expectations around hours of communication and availability&lt;/h4&gt;
+&lt;p&gt;Agreeing on team-wide expectations around hours of communication and availability. If you haven’t already done this, this is absolutely step 1! For inspiration, checkout GitLab’s handbook on &lt;a href=&#34;https://about.gitlab.com/handbook/communication/&#34;&gt;communication guidelines&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;know-when-to-move-from-async-to-sync&#34;&gt;Know when to move from async to sync&lt;/h4&gt;
+&lt;p&gt;Next, to the extent possible, be willing to quickly jump into a call if something doesn’t seem resolvable via chat. This means keeping a headset handy. This is especially useful in cases where you might feel things are tense or something is getting lost in translation.&lt;/p&gt;
+&lt;h4 id=&#34;create-a-venue-like-chat-for-async-daily-standup&#34;&gt;Create a venue like chat for async daily standup&lt;/h4&gt;
+&lt;p&gt;Finally, if you’re worried about making sure you know what everyone on the team is working on, create a venue for this. We have a chat channel called #nikodaily where people share 1. What they did today. 2. What they’re doing tomorrow. 3. Any blockers. 4. Any FYIs. Create something that works for you.&lt;/p&gt;
+&lt;img src=&#34;https://lh5.googleusercontent.com/88aW56hNbTBU4fGNzyRbdLV6kEIPGh0soArqSLbczHXql8FyVxsbFampHNWWjc45FSaM-HXkHmQ3Ija38m5AdNqhHzAInAlv5ouea35th2EM_hM_pHrrjjlqGxQ7lBw30GekDtKm&#34;&gt;
+&lt;figcaption&gt;_Our internal Niko Daily tool which records our async standup statuses and notes_&lt;/figcaption&gt;
+&lt;h2 id=&#34;tip-3-embrace-a-non-linear-workflow&#34;&gt;Tip #3: Embrace a non-linear workflow&lt;/h2&gt;
+&lt;h3 id=&#34;-problem-2&#34;&gt;🙅‍♀️ Problem&lt;/h3&gt;
+&lt;p&gt;Without the ability to just walk over to someone and ask a question, team members are blocked and not making progress on a task, frustrated they can’t get immediate help.&lt;/p&gt;
+&lt;h3 id=&#34;-remote-first-solution-2&#34;&gt;✅ Remote-first solution&lt;/h3&gt;
+&lt;p&gt;This tip applies especially to engineering teams. For engineers who bristle at lots of meetings and context switches, productivity is normally associated with finding flow on a single task. That’s not always possible in a remote, distributed context. Similarly to async communication, a remote workflow expects non-linear progress and optimizes for it.&lt;/p&gt;
+&lt;h3 id=&#34;-tactics-for-your-teams-2&#34;&gt;🛠 Tactics for your teams&lt;/h3&gt;
+&lt;h4 id=&#34;have-multiple-tasks-that-you-can-switch-between-to-always-ensure-progress&#34;&gt;Have multiple tasks that you can switch between to always ensure progress&lt;/h4&gt;
+&lt;p&gt;Due to the asynchronous nature of remote work and especially with current unpredictable circumstances, try to have more than one task on the go, that you can switch between if you get blocked on your current task. At the same time, avoid having so many ongoing tasks at once that context switching prevents making any progress.&lt;/p&gt;
+&lt;h4 id=&#34;document-and-make-team-knowledge-searchable-to-minimize-pings&#34;&gt;Document and make team knowledge searchable to minimize pings&lt;/h4&gt;
+&lt;p&gt;Since you and your teammates may be focused on different things or available at different times, before pinging someone and potentially interrupting their workflow, check if your question has been answered in one of your public channels. One of the benefits of defaulting to open is that all your team knowledge is written down and searchable!&lt;/p&gt;
+&lt;h4 id=&#34;provide-lots-of-context&#34;&gt;Provide lots of context&lt;/h4&gt;
+&lt;p&gt;When you’re blocked and waiting for someone’s response, give plenty of context on what you’ve tried and what you understand so far so they can unblock you while you’re working on something else. Likewise, when responding to others, be deliberate about unblocking them. For example when making decisions or reviewing code, if possible give approval with conditions so they can progress without another round trip to you.&lt;/p&gt;
+&lt;h2 id=&#34;tip-4-foster-team-bonding&#34;&gt;Tip #4: Foster team bonding&lt;/h2&gt;
+&lt;h3 id=&#34;-problem-3&#34;&gt;🙅‍♀️ Problem&lt;/h3&gt;
+&lt;p&gt;Morale is low and team members feel lonely and disconnected from each other. Tensions might emerge as trust weakens. People may feel less willing to take risks.&lt;/p&gt;
+&lt;h3 id=&#34;-remote-first-solution-3&#34;&gt;✅ Remote-first solution&lt;/h3&gt;
+&lt;p&gt;For many years, a Kaggler on our team, &lt;a href=&#34;https://www.kaggle.com/jeffmoser&#34;&gt;Jeff Moser&lt;/a&gt;, has evangelized &lt;a href=&#34;https://stevemcconnell.com/&#34;&gt;Steve McConnell’s&lt;/a&gt; concept of the “half life of trust”. The longer you’re removed from aspects of your colleagues’ lives that make you realize who they are outside of work, the lower your trust is with them.&lt;/p&gt;
+&lt;p&gt;In a &lt;a href=&#34;https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/&#34;&gt;study on Google team effectiveness&lt;/a&gt;, psychological safety was the number one factor contributing to team success. Psychological safety requires trust, so for remote teams for whom this is harder to build, you have to be very deliberate about cultivating it. Put effort into unique ways to maintain and strengthen personal bonds. And have fun. :)&lt;/p&gt;
+&lt;h3 id=&#34;-tactics-for-your-teams-3&#34;&gt;🛠 Tactics for your teams&lt;/h3&gt;
+&lt;h4 id=&#34;celebrate-wins-even-more-often&#34;&gt;Celebrate wins (even more) often!&lt;/h4&gt;
+&lt;p&gt;First, celebrate wins more often. We use chat to regularly share wins in our largest team channel. If your company has a peer recognition system, encourage your team to use it.&lt;/p&gt;
+&lt;h4 id=&#34;set-up-socialization-spaces-for-watercooler-chat&#34;&gt;Set up socialization spaces for “watercooler” chat&lt;/h4&gt;
+&lt;p&gt;Second, set up spaces to replace watercooler chat. These can be a combination of async (e.g., chat) and sync (e.g., recurring optional team meetings).&lt;/p&gt;
+&lt;h4 id=&#34;use-emojis-gratuitously-seriously-&#34;&gt;Use emojis gratuitously (seriously!) 🤪&lt;/h4&gt;
+&lt;p&gt;Finally, it might sound like a joke (okay, it’s a little tongue-in-cheek), but don’t forget to use emojis! By this, I really mean make sure you find ways to insert &lt;a href=&#34;https://en.wikipedia.org/wiki/Phatic_expression&#34;&gt;phatic&lt;/a&gt; expressions that are often missing from text-based communication.&lt;/p&gt;
+&lt;img src=&#34;https://lh5.googleusercontent.com/50Lgie0JK1SX5q89hTcP_XdcFyUAOwXrkUMJteN-KwdUCkPkrkdHE_Whno8Bzs0OWc3TaWIHow404nYboDBuAgIDkRx9yS1-9bv8w84-EjC34co6ZPW_SnpClpuG7ReDJVcpkKDv&#34;&gt;
+&lt;figcaption&gt;_A sampling of posts from our some of our many interest-based chat channels like #pets, #random, and #booksandmovies_&lt;/figcaption&gt;
+&lt;h2 id=&#34;tip-5-take-care-of-yourself&#34;&gt;Tip #5: Take care of yourself&lt;/h2&gt;
+&lt;p&gt;Our last bit of advice is to take care of yourself and encourage your teams to do the same.&lt;/p&gt;
+&lt;p&gt;As we all know this is not a normal work from home situation. Even for our team, one that’s been remote for almost a decade, some of us are feeling the impact on our well being and productivity. In fact, we know from experience that some folks may respond to a situation like this by working even harder than usual. We have to give ourselves and each other a break.&lt;/p&gt;
+&lt;p&gt;There’s a LOT of good advice already out there for well being and work-life balance. But here are some tips from our team. You should strive to do them to the extent possible, but it may be harder for some given circumstances.&lt;/p&gt;
+&lt;img src=&#34;https://lh6.googleusercontent.com/VUvXqngZRbA474lJqLYUX5kvRFpLqafGoTkvIZuE7ON54P2343dvu7_3ZEi4P6n-GVvxyU4PlKLrOUSFsSWQYXlAt_HjXhu1Fu4BAXY1_rfRd1BVoT4checRaBMnLyEsOLAfeSaX&#34;&gt;
+&lt;figcaption&gt;_This is not normal_&lt;/figcaption&gt;
+&lt;h3 id=&#34;-tactics-for-your-teams-4&#34;&gt;🛠 Tactics for your teams&lt;/h3&gt;
+&lt;h4 id=&#34;establish-clear-work-boundaries&#34;&gt;Establish clear work boundaries&lt;/h4&gt;
+&lt;p&gt;Have a routine of “going to the office” like get showered and dressed, maybe exercise to start the day. Also have a wind down routine for “going home” for example go for a walk. Try to have a dedicated space for work only.&lt;/p&gt;
+&lt;h4 id=&#34;disconnect-by-creating-a-predictable-schedule&#34;&gt;Disconnect by creating a predictable schedule&lt;/h4&gt;
+&lt;p&gt;Disconnecting requires finding or creating predictability. For example, try to work the same regular hours. Snooze or disable notifications when you’re done working. And make sure your working hours are visible to others.&lt;/p&gt;
+&lt;h4 id=&#34;assume-good-intent&#34;&gt;Assume good intent&lt;/h4&gt;
+&lt;p&gt;Finally, assume good intent from those you’re working with. This is an extremely taxing time for many and patience can more easily wear thin and mistakes will be made. Be understanding and compassionate (including with yourself!).&lt;/p&gt;
+&lt;h2 id=&#34;wrapping-up&#34;&gt;Wrapping up&lt;/h2&gt;
+&lt;p&gt;We hope that you find these tips helpful. Even for us, a seasoned remote-first team, improving our productivity, efficiency, and happiness is a perpetual process. We’re constantly redefining our own best practices, habits, and workflows.&lt;/p&gt;
+&lt;p&gt;Our most important tip for how to apply these recommendations is to be introspective and flexible. At the end of the day, we can’t give any one-size-fits-all advice because it doesn’t exist. Take the time as a team to listen to your own needs and pain points and adapt solutions accordingly. You’ll quickly find that you’ll develop norms that work for your style, culture, and situation.&lt;/p&gt;
+&lt;p&gt;We’d love to hear in the comments what things work for you and your team!&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Want to know how &lt;a href=&#34;https://twitter.com/kaggle?ref_src=twsrc%5Etfw&#34;&gt;@kaggle&lt;/a&gt; does remote-first? &lt;a href=&#34;https://twitter.com/vimota?ref_src=twsrc%5Etfw&#34;&gt;@vimota&lt;/a&gt; and I share our top 5 remote-first tips for teams new to working from home! &lt;a href=&#34;https://twitter.com/hashtag/remotework?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#remotework&lt;/a&gt; &lt;a href=&#34;https://t.co/c5HPDVUT9q&#34;&gt;https://t.co/c5HPDVUT9q&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1243578237994692608?ref_src=twsrc%5Etfw&#34;&gt;March 27, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

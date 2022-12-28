@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>transparency on Meg Risdal</title>
+    <link>https://www.meg.dev/tags/transparency/</link>
+    <description>Recent content in transparency on Meg Risdal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hello@meg.dev (Meg Risdal)</managingEditor>
+    <webMaster>hello@meg.dev (Meg Risdal)</webMaster>
+    <lastBuildDate>Wed, 22 Jan 2020 22:16:30 -0500</lastBuildDate><atom:link href="https://www.meg.dev/tags/transparency/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Productive transparency in online communities: Inspiration from trains and IKEA</title>
+      <link>https://www.meg.dev/posts/transparency-in-online-communities/</link>
+      <pubDate>Wed, 22 Jan 2020 22:16:30 -0500</pubDate>
+      <author>hello@meg.dev (Meg Risdal)</author>
+      <guid>https://www.meg.dev/posts/transparency-in-online-communities/</guid>
+      <description>&lt;p&gt;The Japanese train system is famously fast, clean, friendly, and efficient. On the drive home from my first day back at Google I was reminded of why as I listened to the &lt;em&gt;99% Invisible&lt;/em&gt; podcast episode &lt;em&gt;&lt;a href=&#34;https://99percentinvisible.org/episode/wait-wait-tell-me/&#34;&gt;“Wait wait &amp;hellip; tell me!”&lt;/a&gt;&lt;/em&gt;. I’ll give you the tl;dr summary of the story and explain some connections I made to product development for online communities that got me so in my head I missed my exit for the 405.&lt;/p&gt;
+&lt;p&gt;One of the secrets to Japan’s impressive system of bullet trains, called &lt;a href=&#34;https://en.wikipedia.org/wiki/Shinkansen&#34;&gt;Shinkansen&lt;/a&gt;, is simple. It’s the kind of elegant solution I dream of and representative of the values I hold as a product and community person. In order to improve rider satisfaction with wait times while trains were cleaned, the new CEO of Shinkansen didn&amp;rsquo;t sacrifice quality. Instead he introduced transparency between workers who cleaned trains and waiting customers. He did this by literally making workers more visible (e.g., bright red uniforms) instead of intentionally invisible (pale blue uniforms that blend in with their environs). Beyond physical appearances alone, he also encouraged workers to actually speak with passengers.&lt;/p&gt;
+&lt;p&gt;Making their work more visible in these ways had profound effects on behaviors in the system between workers and waiting passengers. Namely, passengers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Were less frustrated by wait times because they could better see and understand the purpose of waiting&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Empathized with workers to the point of being more conscientious by proactively cleaning up their own messes&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With this transparency, passengers were empowered with insight into the common interests between themselves and workers. They not only tolerated the extra wait as workers cleaned trains, they embraced it. And no one had to tell them “because it’s good for you.” Additionally, Shinkansen was able to maintain high standards of cleanliness.&lt;/p&gt;
+&lt;p&gt;In a conversation with a friend about the Shinkansen train system story, he brought up IKEA’s cafeterias. The ones with the amazing Swedish meatballs and lingonberry sauce. Where you bus your own table. Not only is a DIY approach appropriate here (it’s IKEA!), they make it consistently transparent throughout the diner’s “user journey” so there’s no room for unmet expectations for Michelin-grade experiences. And it goes beyond signs everywhere. The carts where you stash your emptied trays are an unmissable centerpiece of the cafe. In most places they are hidden out of sight.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.unsplash.com/photo-1517816630506-a8c5ccf61bf0?ixlib=rb-1.2.1&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1050&amp;amp;q=80&#34; alt=&#34;Blue and yellow IKEA building&#34;&gt;
+&lt;em&gt;&lt;a href=&#34;https://unsplash.com/photos/KDawdoaC-ts&#34;&gt;Photo by Oleg Laptev&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://mrisdal.github.io/blog/posts/reflections-on-stack-overflow/&#34;&gt;my blog post&lt;/a&gt; reflecting on my time leading product for Stack Overflow’s public Q&amp;amp;A, I alluded to tensions among different types of users. Curators and moderators and question-askers and question-answerers. One of the things that I think is well appreciated by moderators and curators (and probably many question-answerers, too) is the importance of the quality of content that gets created and maintained over time. Interestingly, question-askers (mostly new users) are the driving force behind content creation on Stack Overflow, yet often their local and immediate needs may not make the quality of the entire repository present in mind. The tension, in part, in my opinion is a lack of transparency between integral parts of the system (people!) that could be communicating.&lt;/p&gt;
+&lt;p&gt;If the flow a question enters when it&amp;rsquo;s closed was more transparent, would that help people understand why it happens? If people saw how content reviews help keep up a healthy ecosystem of question and answer pairs, would they more eagerly contribute to review themselves? What if the average user knew that without a small number of volunteer moderators handling flagged content toxicity would be double what it is?&lt;/p&gt;
+&lt;p&gt;I’ve long thought that much of Kaggle’s relative welcomingness as an online technical community is its inherent temporal transparency between power users and newcomers. This started with &lt;a href=&#34;https://www.kaggle.com/competitions&#34;&gt;Competitions&lt;/a&gt;. Each Competition which runs for a couple of months is a new shared objective for new and old users alike to collaborate and share ideas. Each competition generates a cohort that’s basically a community of practice with a deadline. Once it’s over, users often write-up their approaches (&lt;a href=&#34;https://www.kaggle.com/c/ashrae-energy-prediction/discussion/124984&#34;&gt;example&lt;/a&gt;), sharing what they learned with the community. And then they start all over again with the next competition. Over time, each user is on a cycling trajectory from novice to expert and there’s always some new technique or framework to learn as the state of the art in machine learning evolves. I really believe it&amp;rsquo;s visibility and participation in constantly cycling cohorts with shared goals that make it easier for users of all levels to better empathize.&lt;/p&gt;
+&lt;p&gt;In an online community, you need to find ways to foster and incentivize ways to encourage different types of users to interact positively and contribute to your mission. I believe that transparency, especially by making shared goals and opportunities to empathize apparent in the product itself, can be an important way to achieve this.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thank you once again to Josh Heyer (AKA Shog9) for his feedback on this post (and for talking to me about delicious lingonberry sauce). Thanks also to my fellow Kaggle Noobs moderators (Aakash, Yifan, Mikel, Jorge) for their discussion on this topic.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;h2 id=&#34;reply&#34;&gt;Reply&lt;/h2&gt;
+&lt;p&gt;Follow the conversation and discuss on Twitter.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I wrote up some thoughts on transparency in online communities. 👀🤗 &lt;a href=&#34;https://t.co/b4rEd0VA2i&#34;&gt;https://t.co/b4rEd0VA2i&lt;/a&gt;&lt;/p&gt;&amp;mdash; meg.ehh 🇨🇦 (@MeganRisdal) &lt;a href=&#34;https://twitter.com/MeganRisdal/status/1220193165535170560?ref_src=twsrc%5Etfw&#34;&gt;January 23, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
