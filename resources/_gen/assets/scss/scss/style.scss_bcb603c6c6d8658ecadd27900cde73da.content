@@ -189,7 +189,14 @@ ul {
       .content ol {
         margin-left: 20px; } }
   .content a {
-    text-decoration: underline; }
+    /* Set the initial state of the text properties */
+    text-decoration: underline;
+    font-weight: bold;
+    /* Add transitions to the text properties */
+    transition: text-decoration-thickness 0.5s; }
+  .content a:hover {
+    /* Change the text properties on hover */
+    text-decoration-thickness: 6px; }
   .content blockquote {
     border-left: 5px solid var(--highlight-color);
     margin: 30px 0;

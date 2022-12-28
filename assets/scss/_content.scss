@@ -102,9 +102,16 @@ a {
       }
     }
     a {
+      /* Set the initial state of the text properties */
       text-decoration: underline;
-      &:hover {
-      }
+      font-weight: bold;
+    
+      /* Add transitions to the text properties */
+      transition: text-decoration-thickness 0.5s;
+    }
+    a:hover {
+      /* Change the text properties on hover */
+      text-decoration-thickness: 6px;
     }
     blockquote {
       border-left: 5px solid var(--highlight-color);
