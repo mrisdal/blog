@@ -112,7 +112,7 @@ So of course we have to end here. This is what Chat GPT had to say in response t
 >
 > I hope these recommendations are helpful! Let me know if you have any specific interests or needs, and I can provide more tailored recommendations.
 
-Seems like not a terrible way to spend the rest of my holiday break sick with COVID. But it lacks heart and experience. I'll continue to trust the wisdom of the human crowd (even though many people replied to this thread telling me not to trust people on the internet ...).nyway, who (or what) will you trust? [Check out the tweet](https://twitter.com/MeganRisdal/status/1420521459982606336) for all of the recommendations.
+Seems like not a terrible way to spend the rest of my holiday break sick with COVID. But it lacks heart and experience. I'll continue to trust the wisdom of the human crowd (even though many people replied to this thread telling me not to trust people on the internet ...). Anyway, who (or what) will you trust? [Check out the tweet](https://twitter.com/MeganRisdal/status/1420521459982606336) for all of the recommendations.
 
 --
 
