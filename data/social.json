@@ -34,6 +34,11 @@
       "name": "instagram",
       "url": "https://www.instagram.com/meglearnscanto/",
       "image": "images/social/instagram.svg"
+    },
+    {
+      "name": "rss",
+      "url": "https://www.meg.dev/feed.xml",
+      "image": "images/social/rss.svg"
     }
   ]
 }
