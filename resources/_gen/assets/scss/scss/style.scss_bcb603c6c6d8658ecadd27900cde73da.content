@@ -134,7 +134,8 @@ ul {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 20px; }
   .content h1 {
     font-size: 40px;
     line-height: 1.6;
