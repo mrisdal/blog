@@ -177,7 +177,7 @@ ul {
     .content ul li,
     .content ol li {
       font-size: 18px;
-      line-height: 20px;
+      line-height: 1.6;
       margin-bottom: 10px;
       margin-left: 0; }
       @media (min-width: 767px) {
@@ -195,7 +195,7 @@ ul {
     margin: 30px 0;
     padding: 20px; }
   .content blockquote p {
-    font-size: 20px;
+    font-size: 18px;
     display: inline;
     color: var(--color-base-text); }
   .content img {
