@@ -6,7 +6,7 @@ image: images/rabbits.png
 draft: false
 ---
 
-Right now I'm learning how to speak Cantonese. There are many strategies to learn a language, but using the language daily is one I hear often. This blog post is about the "micro Cantonese podcast" I'm starting as a way to force myself to practice Cantonese every day.
+Right now I'm learning how to speak Cantonese. There are many strategies to learn a language, but using the language daily is one I hear often. This blog post is about the "micro Cantonese podcast" I'm starting on [Instagram](https://www.instagram.com/meglearnscanto/) as a way to force myself to practice Cantonese every day and how I automated its creation using Streamlit, `ffmpeg`, and a Stable Diffusion model.
 
 ## Why a "micro" podcast?
 
