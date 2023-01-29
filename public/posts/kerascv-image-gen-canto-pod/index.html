@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Using KerasCV and Stable Diffusion 2 for podcast artwork - Meg Risdal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://www.meg.dev/favicon.png">
+  <link rel="canonical" href="https://www.meg.dev/posts/kerascv-image-gen-canto-pod/" />
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.3ff7c63a19303dba122a564587e692358947b9cd1c86347703e5366fe5eab7c1.css">
+  
+
+  
+    <meta name="description" content="A few weeks ago I wrote about how I made a micro Canto pod. In this blog post, I&#39;ll share how I recently updated my workflow to use KerasCV with Stable Diffusion 2 to generate the artwork for each episode."/>
+    <meta property="og:title" content="Using KerasCV and Stable Diffusion 2 for podcast artwork"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.meg.dev/posts/kerascv-image-gen-canto-pod/"/>
+    <meta property="og:image" content="https://www.meg.dev/images/rabbit_banner.png"/>
+    <meta property="og:description" content="A few weeks ago I wrote about how I made a micro Canto pod. In this blog post, I&#39;ll share how I recently updated my workflow to use KerasCV with Stable Diffusion 2 to generate the artwork for each episode."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@meganrisdal"/>
+    <meta name="twitter:creator" content="@meganrisdal"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-home">
+                    <a href="https://www.meg.dev/">Home</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-blog">
+                    <a href="https://www.meg.dev/posts/">Blog</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-cantonese">
+                    <a href="https://www.meg.dev/pages/cantonese/">Cantonese</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-about">
+                    <a href="https://www.meg.dev/about/">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-contact">
+                    <a href="https://www.meg.dev/contact/">Contact</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <link rel="alternate"
+      type="application/rss+xml"
+      href="https://www.meg.dev//feed.xml"
+      title="Meg Risdal">
+  <link rel="alternate" type="application/rss+xml" href="https://www.meg.dev//feed.xml" title="Meg Risdal">
+  <a class="header-logo" href="/">Meg Risdal</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-home ">
+        <a href="/">
+          
+          <span>Home</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-blog active">
+        <a href="/posts/">
+          
+          <span>Blog</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-cantonese ">
+        <a href="/pages/cantonese/">
+          
+          <span>Cantonese</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-about ">
+        <a href="/about/">
+          
+          <span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-contact ">
+        <a href="/contact/">
+          
+          <span>Contact</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Using KerasCV and Stable Diffusion 2 for podcast artwork<span class="dot">.</span></h1>
+      
+      <img src="/images/rabbit_banner.png" />
+      
+    </div>
+    <div class="content">
+      <p>A few weeks ago I wrote about <a href="https://www.meg.dev/posts/micro-canto-pod/">how I made a micro Canto pod</a>. In this blog post, I&rsquo;ll share how I recently updated my workflow to use KerasCV with Stable Diffusion 2 to generate the artwork for each episode. Previously, I was using Hugging Face Diffusers.</p>
+<h2 id="using-the-kerascv-implementation-of-stable-diffusion-2">Using the KerasCV implementation of Stable Diffusion 2</h2>
+<p>This will be a very short blog post because using <code>KerasCV</code> was very easy especially because my use case is pretty simple.</p>
+<p>I started by following this <a href="https://keras.io/guides/keras_cv/generate_images_with_stable_diffusion/">High-performance image generation using Stable Diffusion in KerasCV guide</a> in a Colab notebook. In Colab, you need to pip / apt install a couple of things before importing libraries.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">tensorflow</span> <span class="n">keras_cv</span> <span class="o">--</span><span class="n">upgrade</span> <span class="o">--</span><span class="n">quiet</span>
+</span></span><span class="line"><span class="cl"><span class="err">!</span><span class="n">apt</span> <span class="n">install</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">change</span><span class="o">-</span><span class="n">held</span><span class="o">-</span><span class="n">packages</span> <span class="n">libcudnn8</span><span class="o">=</span><span class="mf">8.1.0.77</span><span class="o">-</span><span class="mi">1</span><span class="o">+</span><span class="n">cuda11</span><span class="mf">.2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">keras_cv</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tensorflow</span> <span class="kn">import</span> <span class="n">keras</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span></span></span></code></pre></div>
+<p>And then you can instantiate the Stable Diffusion 2 model. Note that in the guide, you&rsquo;ll see <code>keras_cv.models.StableDiffusion</code> used here. To update this to Stable Diffusion 2, I simply change this to <code>keras_cv.models.StableDiffusionV2</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">keras_cv</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">StableDiffusionV2</span><span class="p">(</span><span class="n">img_width</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">img_height</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span></span></span></code></pre></div>
+<p>I decided to use Colab forms to give myself some consistent prompt options in addition to the option of creating one from scratch.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#@title Enter or select a prompt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">prompt</span> <span class="o">=</span> <span class="s1">&#39;painting of flowers and a rabbit on a red background, ancient chinese art style&#39;</span> <span class="c1">#@param [&#34;red and gold flowers and a white rabbit, ancient chinese art style&#34;, &#34;red flowers, gold filigree, and a rabbit, ancient chinese art style&#34;, &#34;painting of flower and a rabbit on a red background, ancient chinese art style&#34;] {allow-input: true}</span></span></span></code></pre></div>
+<p>With the model instatiated and my prompt chosen, in just a couple of lines I can generate some artwork for my podcast!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">images</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">text_to_image</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Plot and save all of the images</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">plot_images</span><span class="p">(</span><span class="n">images</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&#34;off&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;rabbit_</span><span class="si">{}</span><span class="s1">.png&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="p">)[:</span><span class="mi">9</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plot_images</span><span class="p">(</span><span class="n">images</span><span class="p">)</span></span></span></code></pre></div>
+<p>This creates and prints five generated images like the one below:</p>
+<figure><img src="/images/rabbit-kerascv-sd2.png" width="60%"/>
+</figure>
+
+<p>After this, I save all of the images to a Google Drive folder. I like to be able to hand pick the ones I like most to add to <a href="https://www.meg.dev/pages/cantonese/">my Streamlit app</a> that I use to actually make the &ldquo;podcasts&rdquo; (i.e., Instagram Reels). It would be nice to really quickly create an image on demand whenever I create a new episode, but that&rsquo;s a bit beyond what I want to spend my personal time (and money) on and this workflow works fine for me.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">path_to_files</span> <span class="o">=</span> <span class="s2">&#34;rabbits&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">folder_id</span> <span class="o">=</span> <span class="s2">&#34;1CL1WE3INkPB-ektGNsXSC2hCPuczEeM1&#34;</span> <span class="c1"># the folder where I want to save the generated images</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Using https://colab.research.google.com/notebooks/io.ipynb#scrollTo=jRQ5_yMcqJiV</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">upload_images_to_drive</span><span class="p">(</span><span class="n">path_to_files</span><span class="p">,</span> <span class="n">folder_id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path_to_files</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file_metadata</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">file</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;mimeType&#39;</span><span class="p">:</span> <span class="s1">&#39;image/png&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;parents&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">folder_id</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">media</span> <span class="o">=</span> <span class="n">MediaFileUpload</span><span class="p">(</span><span class="n">path_to_files</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="n">file</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                            <span class="n">mimetype</span><span class="o">=</span><span class="s1">&#39;image/png&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">resumable</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">created</span> <span class="o">=</span> <span class="n">drive_service</span><span class="o">.</span><span class="n">files</span><span class="p">()</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="n">file_metadata</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                          <span class="n">media_body</span><span class="o">=</span><span class="n">media</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                          <span class="n">fields</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">upload_images_to_drive</span><span class="p">(</span><span class="n">path_to_files</span><span class="p">,</span> <span class="n">folder_id</span><span class="p">)</span></span></span></code></pre></div>
+<p>All in all, the only annoying part for me was figuring out how to manage Google Drive files in Colab. It&rsquo;s incredible how accessible generative modeling tools are by contrast. In fact, at one point I asked ChatGPT for help. ;)</p>
+<p>My use case is pretty basic, but for more advanced applications and pipelines, there are some nice benefits of using the KerasCV implementation of Stable Diffusion beyond its utter ease-of-use. From the guide, depending on your setup, the KerasCV Stable Diffusion model can run orders of magnitude faster than its PyTorch counterpart. This is thanks to its graph mode execution, XLA compilation, and support for mixed precision computation. Note that the guide was written in Sept 2022 and I used Stable Diffusion V2 instead of V1.</p>
+<p>Maybe next I&rsquo;ll see if I can get it working on my new M1 Macbook that I just got last week (but Colab is pretty convenient for my purpose). :)</p>
+<h2 id="check-out-the-full-notebook">Check out the full notebook</h2>
+<p>You can see my whole notebook below and open it up in Colab to try it out yourself.</p>
+<script src="https://gist.github.com/mrisdal/9fd711fe02be5937e53b6e11a9e73264.js"></script>
+<p>&ndash;</p>
+<h2 id="reply">Reply</h2>
+<p>Share your thoughts by replying on Twitter</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It&#39;s early! Here&#39;s my year-in-review. Happy new year, everyone! <a href="https://t.co/kING2jBkgz">https://t.co/kING2jBkgz</a></p>&mdash; meg.ehh 🇨🇦 (@MeganRisdal) <a href="https://twitter.com/MeganRisdal/status/1609257954141782016?ref_src=twsrc%5Etfw">December 31, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+    </div>
+  </div>
+
+    <div class="footer">
+    
+    <div class="footer-social">
+      
+        <span class="social-icon social-icon-twitter">
+          <a href="https://twitter.com/meganrisdal" title="twitter" target="_blank" rel="noopener">
+            <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+          </a>
+        </span>
+      
+        <span class="social-icon social-icon-github">
+          <a href="https://github.com/mrisdal" title="github" target="_blank" rel="noopener">
+            <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+          </a>
+        </span>
+      
+        <span class="social-icon social-icon-linkedin">
+          <a href="https://www.linkedin.com/in/megan-risdal-4617812a/" title="linkedin" target="_blank" rel="noopener">
+            <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+          </a>
+        </span>
+      
+        <span class="social-icon social-icon-mastodon">
+          <a href="https://mastodon.social/@meganrisdal" title="mastodon" target="_blank" rel="noopener">
+            <img src="/images/social/mastodon.svg" width="24" height="24" alt="mastodon"/>
+          </a>
+        </span>
+      
+        <span class="social-icon social-icon-kaggle">
+          <a href="https://kaggle.com/mrisdal" title="kaggle" target="_blank" rel="noopener">
+            <img src="/images/social/kaggle.svg" width="24" height="24" alt="kaggle"/>
+          </a>
+        </span>
+      
+        <span class="social-icon social-icon-letterboxd">
+          <a href="https://letterboxd.com/mrisdal/" title="letterboxd" target="_blank" rel="noopener">
+            <img src="/images/social/letterboxd.svg" width="24" height="24" alt="letterboxd"/>
+          </a>
+        </span>
+      
+        <span class="social-icon social-icon-instagram">
+          <a href="https://www.instagram.com/meglearnscanto/" title="instagram" target="_blank" rel="noopener">
+            <img src="/images/social/instagram.svg" width="24" height="24" alt="instagram"/>
+          </a>
+        </span>
+      
+        <span class="social-icon social-icon-rss">
+          <a href="https://www.meg.dev/feed.xml" title="rss" target="_blank" rel="noopener">
+            <img src="/images/social/rss.svg" width="24" height="24" alt="rss"/>
+          </a>
+        </span>
+      
+      <div style="float: right;">
+        <span>&copy; 2023 Meg Risdal - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127474557-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-127474557-1');
+      </script>
+    
+  
+
+  
+
+
+</body>
+</html>
