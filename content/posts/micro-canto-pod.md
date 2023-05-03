@@ -2,7 +2,7 @@
 title: "Why and how I made a micro Cantonese podcast"
 date: 2022-12-28T11:13:38-05:00
 description: "Right now I'm learning how to speak Cantonese. There are many strategies to learn a language, but using the language daily is one I hear often. This blog post is about the 'micro Cantonese podcast' I'm starting as a way to force myself to practice Cantonese every day."
-image: images/rabbit_banner.png
+image: images/rabbits.png
 draft: false
 ---
 

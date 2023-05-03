@@ -16,6 +16,11 @@
       "image": "images/social/linkedin.svg"
     },
     {
+      "name": "bluesky",
+      "url": "https://staging.bsky.app/profile/meg.dev",
+      "image": "images/social/bluesky-todo-replace-this-huge-file.svg"
+    },
+    {
       "name": "mastodon",
       "url": "https://mastodon.social/@meganrisdal",
       "image": "images/social/mastodon.svg"

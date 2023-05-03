@@ -8,15 +8,13 @@ menu:
     weight: 2
 ---
 
-## Cantonese podcast video creator app
+## Cantonese podcast
 
-I started an [Instagram](https://www.instagram.com/meglearnscanto/) to document my progress learning Cantonese. To help me quickly create videos for my recordings, I made this app using Streamlit.
-
-{{< iframe ref="https://mrisdal-canto-podcast-creator-create-podcast-oselu7.streamlit.app/?embedded=true" >}}
+I started an [Instagram](https://www.instagram.com/meglearnscanto/) to document my progress learning Cantonese.
 
 ## Resources
 
-Apart from using my daily podcast to force myself to practice every day, here are some resources I'm using to learn Cantonese (sharing in case they are helpful to others):
+Apart from using my podcast to force myself to practice every day, here are some resources I'm using to learn Cantonese (sharing in case they are helpful to others):
 
 * Practicing regularly with my partner, a Cantonese speaker.
 * Taking courses at the University of Toronto. You can see if there's a course available near you using [this map](https://www.savecantonese.org/map).

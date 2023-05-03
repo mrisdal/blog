@@ -1,4 +1,4 @@
 ---
 title: Hello
-description: Product @ Kaggle. Community, data science, language, & weirdness.
+description: Product @ Kaggle (Google). Community, data science, language, & weirdness.
 ---
